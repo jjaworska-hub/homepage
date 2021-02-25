@@ -12,13 +12,15 @@
 <body>
     <header>
         <nav class="navigation">
-            <a href="index.html">Strona domowa robiona w ramach kursu WTF</a>
-            <a href="nauka_html.html">Nauka HTML</a>
+            <a href="index.html">Strona główna</a>
+            <a href="nauka_html.html">HTML</a>
+            <a href="nauka_css.html">CSS</a>
+            <a href="JavaScript.html">JavaScript</a>
         </nav>
     </header>
 
     <main>
-        <header class="siteName">
+        <header class="main-page">
             <h1>Joanna Jaworska – Strona Główna</h1>
         </header>
 
@@ -27,29 +29,29 @@
             <p>Kimś kto bardzo chce się nauczyć programować. Poza tym absolwentka japonistyki, miłośniczka Minecrafta.
             </p>
         </section>
-        <section>
-            <img src="programowanie.jpg" alt="Kadetka w Szkole Magii i Programowania w WTF"/>
-            <h2 class="notes">Notatki z WTF:Co ten Frontend?</h2>
-            <article class="notesSecondWeek">
+        <section class="notes">
+            <img src="programowanie.jpg" alt="Kadetka w Szkole Magii i Programowania w WTF" class="picture"/>
+            <h2 class="notes__title">Notatki z WTF:Co ten Frontend?</h2>
+            <article class="notes__text">
                 <p>
-                <h2>Tydzień 2</h2>
+                <h2 class="notes__title">Tydzień 2</h2>
                 Porządkowanie kodu HTML: Crtl+Shift+P ---> Format Document </br>
                 Tworzenie szkieletu HTML: ! ---> Tab </br>
-                <b><a href="https://validator.w3.org/nu/#textarea">Validator</a></b> -sprawdza czy kod HTML nie ma
+                <b><a href="https://validator.w3.org/nu/#textarea" class="notes__link">Validator</a></b> -sprawdza czy kod HTML nie ma
                 błądów </br>
-                <b><a href="https://www.w3.org/TR/html52/">W3</a></b></p>
+                <b><a href="https://www.w3.org/TR/html52/" class="notes__link">W3</a></b></p>
             </article>
-            <article class="notesThirdWeek">
+            <article class="notes__text">
                 <p>
-                <h2>Tydzień 3</h2>
-                <b>Trello</b> ---> Kanban; porządkowanie zadań</br>
-                <b>coolors.co</b> ---> wyszukiwanie palet kolorów</br>
+                <h2 class="notes__title">Tydzień 3</h2>
+                <b  class="notes__link" >Trello</b> ---> Kanban; porządkowanie zadań</br>
+                <b  class="notes__link">coolors.co</b> ---> wyszukiwanie palet kolorów</br>
                 </p>
             </article>
         </section>
     </main>
     <footer>
-        <h3 class="footerPart">Strona do <a href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.</h3>
+        <h3 class="footer">Strona do <a href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.</h3>
     </footer>
     <script src="main.js"></script>
 
