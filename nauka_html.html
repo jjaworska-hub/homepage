@@ -10,20 +10,31 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Strona Główna</a>
-            <a href="nauka_html.html">HTML</a>
-            <a href="nauka_css.html">CSS</a>
-            <a href="JavaScript.html">JavaScript</a>
+    <header class="header-navigation">
+        <nav class="navigation">
+            <a class="navigation-link" href="index.html">Strona główna</a>
+            <a class="navigation-link" href="nauka_html.html">HTML</a>
+            <a class="navigation-link" href="nauka_css.html">CSS</a>
+            <a class="navigation-link" href="JavaScript.html">JavaScript</a>
         </nav>
     </header>
+
     <main>
-        <header>
-            <h1>Nauka HTML-a</h1>
+        <header class="HTML">
+            <h1>Notatki z HTML</h1>
         </header>
-    
-        <section id="notatki">
+
+        <section>            
+            <article class="notes__text">
+                <p>
+                <h2>Skróty klawiszowe</h2>
+                Porządkowanie kodu HTML: Crtl+Shift+P ---> Format Document </br>
+                Tworzenie szkieletu HTML: ! ---> Tab </br>
+                </p>
+            </article>
+        </section>
+
+        <section class="tags">
             <h2>TAGI</h2>
             <p>
                 "/br" - nowa linia </br>
@@ -37,16 +48,21 @@
                 "nav" - nawigacja</br>
                 " img src="" alt="" " - img - obrazek o podanym adresie</br>
             </p>
-            <h2>Warto zapamiętać</h2>
-            <p>
-                Jeśli coś jest powtarzalne na podstronach wstawiamy to przed "main"
-            </p>
-    
         </section>
+
+        <section class="to-remember">
+            <p>
+            <h2>Warto zapamiętać</h2>
+            Jeśli coś jest powtarzalne na podstronach wstawiamy to przed "main"
+            </p>
+        </section>
+    
     </main>
     <footer>
-        <h3>Strona do <a href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.</h3>
+        <h3 class="footer">Strona do <a class="footer-link" href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.</h3>
     </footer>
+    <script src="main.js"></script>
+
 </body>
 
 </html>
