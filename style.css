@@ -41,8 +41,9 @@ body {
 }
 main{
   display: block;
-  width:50vw;
-  margin: auto;
+  max-width:50%;
+  margin: 0 auto;
+
 }
 .main-page {
   color: #92DCE5;
@@ -51,6 +52,8 @@ main{
 h1{
   color: #92DCE5;
   font-family:Georgia, 'Times New Roman', Times, serif;
+  padding-top: 70px;
+  margin: auto;
 }
 h2 {
   color: #753e70;
@@ -103,6 +106,7 @@ h2 {
   border-radius: 50%;
   width:450px;
   margin-left: 55px;
+  margin: 30px;
 }
 
 .footer{
@@ -220,7 +224,7 @@ h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.note-JS{
+.notes-JavaScript{
   margin-top:20px;
   padding: 10px;
   border:7px solid #92DCE5;
@@ -230,3 +234,15 @@ h2 {
   color: #2B2D42;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.variable{
+  margin-top:20px;
+  padding: 10px;
+  border:7px solid #92DCE5;
+  border-radius: 30px;
+  background-color:#92DCE5;
+  width:550px;
+  color: #2B2D42;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

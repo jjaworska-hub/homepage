@@ -8,4 +8,4 @@ console.log(`Nazywam się ${firstName} i mam ${age} lata`);
 
 const notes = document.querySelector('.notes-JavaScript--js')
 
-notes.innerHTML = 'Praca domowa została wykonana'
+notes.innerHTML = 'Funkcje'

@@ -24,16 +24,38 @@
             <h1>Notatki z JavaScript</h1>
         </header>
 
-        <section >
-            <h2 class="notes-JavaScript notes-JavaScript--js">Tu jest przykładowy element</h2>
+        <section class="notes-JavaScript" >
+            <h2 class="notes-JavaScript--js">Tu jest przykładowy element</h2>
+            <p> 
+            alert('tekst'); - na stronie (przed jej załadowaniem) wyświetli się alert</br>
+            console.log('tekst'); - pojawia się napis w konsoli</br>
+            const nazwa_zmiennej = 'tekst'; - sposób zapisu zmiennej</br>
+            const nazwa_zmiennej = liczba; - sposób zapisuj zmiennej z liczbą</br>
+            console.log(nazwa_zmiennej); - sposób wywołania zmiennej</br>
+            console.log(`tekst + ${zmienne}`); - zapis literału, czyli tekstu wraz ze zmiennymi; zamiast pojedynczego cudzysłowu(') używamy tyldy (`)</br>
+            let nazwa_zmiennej = 'tekst' - tworzymy zmienną, którą możemy potem nadpisać</br>
+            typeof - sprawdza jakiego typu jest dana zmienna</br>
+
+        </p>
+        </section>
+
+        <section class="variable">
             <p>
+            <h2>Zmienne</h2>
+            Istnieją trzy sposoby zapisywania zmiennych w JavaScript. Są to słowa kluczowe LET, CONST i VAR. 
+            Powoli odchodzi się od używania VAR.
             </p>
         </section>
+    
 
         <section class="to-remember">
             <p>
             <h2>Warto zapamiętać</h2>
             Zmianna to nie wartość!</br>
+            Kod script dodajemy na samym końcu HTML-a (za footerem a przed body)</br>
+            Pmiętaj o kolejności zapisów w JS!</br>
+            Zmienna to połączenie z naszym wszechświatem wartości</br>
+            Nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to połączenie między nimi, a zmiennymi.</br>
             </p>
         </section>
     
