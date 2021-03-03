@@ -71,8 +71,7 @@ h2 {
   border:7px solid #92DCE5;
   border-radius: 30px;
   background-color:#92DCE5 ;
-
-  
+ 
 }
 .links-link{
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -246,3 +245,13 @@ h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.clan{
+  margin-top:20px;
+  padding: 10px;
+  border:7px solid #92DCE5;
+  border-radius: 30px;
+  background-color:#92DCE5;
+  width:550px;
+  color: #2B2D42;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
