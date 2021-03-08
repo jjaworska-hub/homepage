@@ -20,46 +20,56 @@
     </header>
 
     <main>
-        <header class="HTML">
-            <h1>Notatki z HTML</h1>
-        </header>
+        <div class="row">
+            <header class="HTML">
+                <h1>Notatki z HTML</h1>
+            </header>
+        </div>
 
-        <section>            
-            <article class="notes__text">
+        <div class="row">
+            <section>
+                <article class="notes-section">
+                    <p>
+                    <h2>Skróty klawiszowe</h2>
+                    Porządkowanie kodu HTML: Crtl+Shift+P ---> Format Document </br>
+                    Tworzenie szkieletu HTML: ! ---> Tab </br>
+                    </p>
+                </article>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <h2>TAGI</h2>
                 <p>
-                <h2>Skróty klawiszowe</h2>
-                Porządkowanie kodu HTML: Crtl+Shift+P ---> Format Document </br>
-                Tworzenie szkieletu HTML: ! ---> Tab </br>
+                    "/br" - nowa linia </br>
+                    "strong" - podkreśla wysoką istotność i poważność frazy w nim zawartej</br>
+                    "em" - podkreśla, że tekst może mieć inne znaczenie (np. ironia) </br>
+                    "b" - pogrubienie (ale nie ma znaczenia semantycznego)</br>
+                    "i" - kursywa (ale nie ma znaczenia semantycznego)</br>
+                    atrybut id - identyfikuje element (przydaje się do nawigacji w obrębie dokumentu)</br>
+                    "a href="link">opis łącza a>" - a - linki / łącza wewnątrz dokumentu </br>
+                    "element id="moj-identyfikator" element" - atrybut id - identyfikuje element (przydaje się do
+                    nawigacji w obrębie dokumentu)</br>
+                    "nav" - nawigacja</br>
+                    " img src="" alt="" " - img - obrazek o podanym adresie</br>
                 </p>
-            </article>
-        </section>
+            </section>
+        </div>
 
-        <section class="tags">
-            <h2>TAGI</h2>
-            <p>
-                "/br" - nowa linia </br>
-                "strong" - podkreśla wysoką istotność i poważność frazy w nim zawartej</br>
-                "em" - podkreśla, że tekst może mieć inne znaczenie (np. ironia) </br>
-                "b" - pogrubienie (ale nie ma znaczenia semantycznego)</br>
-                "i" - kursywa (ale nie ma znaczenia semantycznego)</br>
-                atrybut id - identyfikuje element (przydaje się do nawigacji w obrębie dokumentu)</br>
-                "a href="link">opis łącza a>" - a - linki / łącza wewnątrz dokumentu </br>
-                "element id="moj-identyfikator" element" - atrybut id - identyfikuje element (przydaje się do nawigacji w obrębie dokumentu)</br>
-                "nav" - nawigacja</br>
-                " img src="" alt="" " - img - obrazek o podanym adresie</br>
-            </p>
-        </section>
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Warto zapamiętać</h2>
+                Jeśli coś jest powtarzalne na podstronach wstawiamy to przed "main"
+                </p>
+            </section>
+        </div>
 
-        <section class="to-remember">
-            <p>
-            <h2>Warto zapamiętać</h2>
-            Jeśli coś jest powtarzalne na podstronach wstawiamy to przed "main"
-            </p>
-        </section>
-    
     </main>
     <footer>
-        <h3 class="footer">Strona do <a class="footer-link" href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.</h3>
+        <h3 class="footer">Strona do <a class="footer-link" href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.
+        </h3>
     </footer>
     <script src="main.js"></script>
 

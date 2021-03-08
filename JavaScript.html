@@ -24,44 +24,111 @@
             <h1>Notatki z JavaScript</h1>
         </header>
 
-        <section class="notes-JavaScript" >
-            <h2 class="notes-JavaScript--js">Tu jest przykładowy element</h2>
-            <p> 
-            alert('tekst'); - na stronie (przed jej załadowaniem) wyświetli się alert</br>
-            console.log('tekst'); - pojawia się napis w konsoli</br>
-            const nazwa_zmiennej = 'tekst'; - sposób zapisu zmiennej</br>
-            const nazwa_zmiennej = liczba; - sposób zapisuj zmiennej z liczbą</br>
-            console.log(nazwa_zmiennej); - sposób wywołania zmiennej</br>
-            console.log(`tekst + ${zmienne}`); - zapis literału, czyli tekstu wraz ze zmiennymi; zamiast pojedynczego cudzysłowu(') używamy tyldy (`)</br>
-            let nazwa_zmiennej = 'tekst' - tworzymy zmienną, którą możemy potem nadpisać</br>
-            typeof - sprawdza jakiego typu jest dana zmienna</br>
+        <div class="row">
+            <section class="notes-section">
+                <h2 class="notes-JavaScript--js">Tu jest przykładowy element</h2>
+                <p>
+                    alert('tekst'); - na stronie (przed jej załadowaniem) wyświetli się alert</br>
+                    console.log('tekst'); - pojawia się napis w konsoli</br>
+                    const nazwa_zmiennej = 'tekst'; - sposób zapisu zmiennej</br>
+                    const nazwa_zmiennej = liczba; - sposób zapisuj zmiennej z liczbą</br>
+                    console.log(nazwa_zmiennej); - sposób wywołania zmiennej</br>
+                    console.log(`tekst + ${zmienne}`); - zapis literału, czyli tekstu wraz ze zmiennymi; zamiast
+                    pojedynczego cudzysłowu(') używamy tyldy (`)</br>
+                    let nazwa_zmiennej = 'tekst' - tworzymy zmienną, którą możemy potem nadpisać</br>
+                    typeof - sprawdza jakiego typu jest dana zmienna</br>
 
-        </p>
-        </section>
+                </p>
+            </section>
+        </div>
 
-        <section class="variable">
-            <p>
-            <h2>Zmienne</h2>
-            Istnieją trzy sposoby zapisywania zmiennych w JavaScript. Są to słowa kluczowe LET, CONST i VAR. 
-            Powoli odchodzi się od używania VAR.
-            </p>
-        </section>
-    
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Zmienne</h2>
+                Istnieją trzy sposoby zapisywania zmiennych w JavaScript. Są to słowa kluczowe LET, CONST i VAR.
+                Powoli odchodzi się od używania VAR.
+                </p>
+            </section>
+        </div>
 
-        <section class="to-remember">
-            <p>
-            <h2>Warto zapamiętać</h2>
-            Zmianna to nie wartość!</br>
-            Kod script dodajemy na samym końcu HTML-a (za footerem a przed body)</br>
-            Pmiętaj o kolejności zapisów w JS!</br>
-            Zmienna to połączenie z naszym wszechświatem wartości</br>
-            Nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to połączenie między nimi, a zmiennymi.</br>
-            </p>
-        </section>
-    
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Funkcje</h2>
+                function calculate(myNumber) { return myNumber*7; }</br>
+                <p></p>
+                function - deklaracja </br>
+                (myNumber) - parametr </br>
+                return - słowo kluczowe </br>
+                myNumber - wynik </br>
+                </p>
+                <p>
+                    Aby wpisać parametry w funckję:</br>
+                    calculate();</br>
+                    calculate - nazwa funkcji,którą chcemy wywołać</br>
+                    W nawiasie wpisujemy parametr, który "wskoczy" w miejsce myNumber. Dzięki temu funkcja będzie
+                    mogła przeprowadzić działanie.</br>
+                </p>
+                <p>
+                    W celu wywołania funkcji w konsoli najpierw musimy przypisać zmienną do calculate():</br>
+                    const myResult = calculate();</br>
+                    Aby wyświetlić wynik funkcji w konsoli należy wpisać:</br>
+                    console.log(myResult)
+                </p>
+                <p>
+                    W funckjack JS możemy wpisywać nie tylko liczny ale też tekst. Funkcja może również pryzjmować
+                    więcej nić jeden parametr.</br>
+                    Przykładowa funkcja:</br>
+                <p></p>
+                function greet (age,firstName) {</br>
+                console.log(</br>
+                `Witaj Drogi Odwiedzający, nazywam się %{firstName} i mam ${age} lat.`</br>
+                )</br>
+                };</br>
+                </p>
+                Podstawiamy paramatery:</br>
+                greet(18,'Maciek')</br>
+                Funkcja wywoła zdanie w konsoli nawet bez returna:</br>
+                "Witaj Drogi Odwiedzający, nazywam się <strong>Maciek</strong> i mam <strong>18</strong> lat."</br>
+                W przypadku nie podania, któregoś z elementów pojawi się na jego miejscu "undefined".</br>
+                Możemy wywołać jedną funkcję wiele razy.</br>
+                <p>
+                    Poniżej przykład funkcji za pomocą której, możemy uzupełnić wybrany element HTML o określony content.
+                    <p></p>
+                    function createContent(querySelectorContent,content) {</br>
+                        const element = document.querySelector(querySelectorContent);</br>
+                        element.innerHTML = content;</br>
+                    }</br>
+                    Wywołujemy funkcję:</br>
+                    createContent('.week-summary__description--js', 'Witaj świecie!')</br>
+                    <p></p>
+                    Rezultat:</br>
+                    W miejscu wskazany przez querySelectorContent pojawia się wpisany przez nas content.</br>
+                </p>
+
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Warto zapamiętać</h2>
+                Zmianna to nie wartość!</br>
+                Kod script dodajemy na samym końcu HTML-a (za footerem a przed body)</br>
+                Pmiętaj o kolejności zapisów w JS!</br>
+                Zmienna to połączenie z naszym wszechświatem wartości</br>
+                Nie możemy zmieniać wartości primitive values w JS. To co zmieniamy to połączenie między nimi, a
+                zmiennymi.</br>
+                Jeśli funkcja nie ma zdefiniowanego returna to zwróci nam undefined.
+                </p>
+            </section>
+        </div>
+
     </main>
     <footer>
-        <h3 class="footer">Strona do <a class="footer-link" href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.</h3>
+        <h3 class="footer">Strona do <a class="footer-link" href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.
+        </h3>
     </footer>
     <script src="main.js"></script>
 
