@@ -158,6 +158,58 @@
             <section class="notes-section">
                 <p>
                 <h2>Obiekty</h2>
+                Obiekt jest strukturą danych.</br>
+                Przykład obiektu:</br>
+                <p></p>
+                const deathStar = {</br>
+                diameter: 120000,</br>
+                fire: (target) => {</br>
+                console.log(`${target} destroyed 💥`)</br>
+                },</br>
+                isOperating: true,</br>
+                levels: 357,</br>
+                name: 'Death Star',</br>
+                population: 10000,</br>
+                }</br>
+                Funkcje określają jakąś czynność a obiekt zawiera infomracje o jego cechach.</br>
+                Obiekt może zawierać w sobie funkcje.</br>
+                W konsoli własności obiektu wypisywane są alfabetycznie.</br>
+                <p></p>
+                klucz: wartość;</br>
+                klucz - unikalny w ramach obiektu</br>
+                wartość - prymitywy / funkcje / zagnieżdżenia</br>
+                <p></p>
+                Możliwe jest stworzenie obiektu w obiekcie.</br>
+                <p></p>
+                Aby wypisać jedną własność z obiektu:</br>
+                console.log(deathStar.name)</br>
+                Konsola wypisze nam tylko własność name.</br>
+                Jeśli chcemy przejśc do własności obiektu w obiekcie doapisujemy kolejną kropkę a po niej nazwę
+                własności:</br>
+                console.log(deathStar.commander.name)</br>
+                <p></p>
+                Metodą w obiektach nazywamy funkcję w tym obiekcie.</br>
+                Metodę wywołujemy w nasyępujący sposób:</br>
+                deathStar.fire('Rebel ship')</br>
+                fire - nazwa metody</br>
+                () - w nawiasie wpisujemy target zapisany w metodzie fire</br>
+                <p></p>
+                Oprócz metody dot notation (zaprezentowanej powyżej) istnieje również bracket notation.</br>
+                Wygląda ona natępująco:</br>
+                <p></p>
+                console.log(deathStar['name'])</br>
+                <p></p>
+                W metodzie bracket podając własność konieczne jest użycie kwadratowych nawiasów.</br>
+                <p></p>
+                Funkcja,która pozwala na szybkie wywoływanie własności z obiektu:</br>
+                <p></p>
+                const showMeProperty = (myProperty) => {</br>
+                console.log(`Twoje własność ${myProperty} to: ${deathStar[myProperty]}`);</br>
+                }</br>
+                <p></p>
+                showMeProperty('levels')</br>
+                Funkcja wypisze własność levels obiektu deathStar.</br>
+
 
                 </p>
             </section>
