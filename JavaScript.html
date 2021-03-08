@@ -84,7 +84,7 @@
                 function greet (age,firstName) {</br>
                 console.log(</br>
                 `Witaj Drogi Odwiedzający, nazywam się %{firstName} i mam ${age} lat.`</br>
-                )</br>
+                );</br>
                 };</br>
                 </p>
                 Podstawiamy paramatery:</br>
@@ -94,21 +94,75 @@
                 W przypadku nie podania, któregoś z elementów pojawi się na jego miejscu "undefined".</br>
                 Możemy wywołać jedną funkcję wiele razy.</br>
                 <p>
-                    Poniżej przykład funkcji za pomocą której, możemy uzupełnić wybrany element HTML o określony content.
-                    <p></p>
-                    function createContent(querySelectorContent,content) {</br>
-                        const element = document.querySelector(querySelectorContent);</br>
-                        element.innerHTML = content;</br>
-                    }</br>
-                    Wywołujemy funkcję:</br>
-                    createContent('.week-summary__description--js', 'Witaj świecie!')</br>
-                    <p></p>
-                    Rezultat:</br>
-                    W miejscu wskazany przez querySelectorContent pojawia się wpisany przez nas content.</br>
+                    Poniżej przykład funkcji za pomocą której, możemy uzupełnić wybrany element HTML o określony
+                    content.
+                <p></p>
+                function createContent(querySelectorContent,content) {</br>
+                const element = document.querySelector(querySelectorContent);</br>
+                element.innerHTML = content;</br>
+                }</br>
+                Wywołujemy funkcję:</br>
+                createContent('.week-summary__description--js', 'Witaj świecie!')</br>
+                <p></p>
+                Rezultat:</br>
+                W miejscu wskazany przez querySelectorContent pojawia się wpisany przez nas content.</br>
                 </p>
-
+                <p>
+                    Podsumowanie:</br>
+                <p></p>
+                Deklarujemy nazwę funkcji (nie zawsze).</br>
+                W środku dokonujemy obliczeń/wykonujemy zadania.</br>
+                Funkcja przyjmuje argumenty (ale nie musi).</br>
+                Funkacja zwraca zawsze coś (nawet jeśli nie mamy return - wtedy funkcja zwraca undefined)
+                </p>
             </section>
         </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>(Fat) arrow function</h2>
+                Przykład arrow function:</br>
+                <p></p>
+                cont calculate = (myNumber) => {</br>
+                myNumber = myNumber + 3;</br>
+                console.log(myNumber);</br>
+                return myNumber*7;</br>
+                }</br>
+                <p></p>
+                calculate(2); //35</br>
+                <p></p>
+                Funkcja greet w wersji fat arrow:</br>
+                const greet = (age,firstName) => {
+                console.log(</br>
+                `Witaj Drogi Odwiedzający, nazywam się %{firstName} i mam ${age} lat.`</br>
+                );</br>
+                }</br>
+                <p></p>
+                Można skrócić jeszcze bardziej:</br>
+                const calculate = myNumber => (myNumber+3)*7;</br>
+                const myResult = calculate(7)</br>
+                console.log(myResult)</br>
+                <p></p>
+                Podsumowanie:</br>
+                Skraca zapis deklaracji funkcji.</br>
+                Zawiększa czytelność (dyskusyjne).</br>
+                Nie tworzy nowego kontekstu <strong>this</strong>, nie ma dostępu do <strong>arguments</strong> i
+                <strong>super</strong>.</br>
+                Nie jest zamiennikiem "tradycyjnej" funkcji (ale w większości przypadków nie zobaczysz różnicy).</br>
+                </p>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Obiekty</h2>
+
+                </p>
+            </section>
+        </div>
+
 
         <div class="row">
             <section class="notes-section">
