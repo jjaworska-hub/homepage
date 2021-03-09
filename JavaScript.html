@@ -209,12 +209,40 @@
                 <p></p>
                 showMeProperty('levels')</br>
                 Funkcja wypisze własność levels obiektu deathStar.</br>
-
-
                 </p>
             </section>
         </div>
 
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Immutability w obiektach</h2>
+                Nie da się usunąć wartości ze zmiennych. My jest tylko przekierowujemy.</br>
+                Jeśli mamy dwa consty albo lety o tej samej wartości,to są one czymś oddzielnym. Oba są podłaczone
+                do tej samej wartości. Np.:</br>
+                const humanOne = 'Wojtek'</br>
+                const humanTwo = 'Wojtek'</br>
+                Zarówno humanOne jak i humanTwo są podłączone do tego samego Wojtka. Nie ma dwóch odzielnych Wojtków.</br>
+                WAŻNE!</br>
+                Typy proste są niemutowalne. Natomiast obiekty są mutowalne. Np.:</br>
+                const humanOne = {</br>
+                    name = 'Wojtek',</br>
+                    age = 25</br>
+                }</br>
+                <p></p>
+                const humanTwo = {</br>
+                    name = 'Anna',</br>
+                    age = 26</br>
+                }</br>
+                <p></p>
+                Możemy zmienić włsności obiektu. Nie są one stałe. Czyli np. możemy przypisać Annie wiek 25. Wtedy podepnie się
+                on w naszym świecie wartości do 25-tki. Tej samej, do której jest podłączony Wojtek.</br>
+                Możemy też zrobić to w drugą stronę. Jeśli obie własności age wynosiłyby 25 możemy ustawić jedną z nich na inną
+                liczbę,ponieważ te połączenia są elastyczne.</br>
+                
+                </p>
+            </section>
+        </div>
 
         <div class="row">
             <section class="notes-section">
