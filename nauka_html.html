@@ -60,6 +60,14 @@
                     <li>"dl" - description list</li></br>
                     <li>"dt" - description term</li></br>
                     <li>"dd" - description details</li></br>
+                    <li>"table" - tabela</li></br>
+                    <li>"tr" - wiersz tabeli (table row)</li></br>
+                    <li>"td" - komórka tabeli (table data (cell))</li></br>
+                    <li>"thead" - nagłówek tabeli</li></br>
+                    <li>"th" - komórka w nagłówku tabeli</li></br>
+                    <li>"tbody" - "ciało" tabeli</li></br>
+                    <li>"caption" - opis tabeli</li></br>
+
                 </ul>
                 </p>
             </section>
@@ -90,9 +98,40 @@
         <div class="row">
             <section class="notes-section">
                 <p>
+                <h2>Przykład tabeli</h2>
+                <table>
+                    <caption>Rozpiska WTF</caption>
+                    <thead>
+                        <tr>
+                            <th>Tydzień</th>
+                            <th>Lekcja</th>
+                            <th>Czas trwania</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>I</td>
+                            <td>WTF:Intro</td>
+                            <td>5:00</td>
+                        </tr>
+                        <tr>
+                            <td>I</td>
+                            <td>Ścieżka Kariery</td>
+                            <td>7:12</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
                 <h2>Warto zapamiętać</h2>
                 <ul>
                     <li>Jeśli coś jest powtarzalne na podstronach wstawiamy to przed "main"</li></br>
+                    <li>Nie używamy tabel do budowania layoutów!</li></br>
                 </ul>
                 </p>
             </section>
