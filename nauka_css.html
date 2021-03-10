@@ -21,99 +21,121 @@
 
     <main>
         <div class="row">
-        <header class="CSS">
-            <h1>Notatki z CSS</h1>
-        </header>
+            <header class="CSS">
+                <h1>Notatki z CSS</h1>
+            </header>
         </div>
 
         <div class="row">
-        <section class="notes-section">
-            <h2>Atrybuty</h2>
-            <p>
-                div - nie ma znaczenia semantycznego; jest często naużywany; stasowany do stylowania. </br>
-                display:</br>
-                display:block - elementy ustawiają się jeden pod drugim</br>
-                display:inline - elementy ustawiają się obok siebie; wartości width/height nie są brane pod uwagę;</br>
-                display:inline-block - nadaje elementom dodatkowe własności, które są niedostępne dla własności inline'owych, a są dostępne dla blockowych;</br>
-                elementy mogą mieć ustawiony width oraz height; jeśli mają odpowiednio dużo miejsca ustawiają się w linii; jeśli zmniejszymy okno, przeskakują</br>
-                jeden pod drugim
-                background:(000,000,000,0,x) - ostatnia wartość to znacznik przezroczystości</br>
-                width/height - szerokość/wysokość; ustawione "na sztywno" (nie zmniejszają się kiedy zmniejszymy okno)</br>
-                max-width - element (jeśli zmniejszymy okno) będzie zmniejszał się od momentu wartości width</br>
-                max-height - jeśli treści jest więcej niż wysokości, treść wyjedzie poza "ramkę"; rzadko stosowane</br>
-                min-width - musi mieć min Xpx szerokości; jeśli ma miejsce na więcej to dosyanie</br>
-                min-height - w przeciwieństwie do max-height, "ramka" będzie rozwijać się razem z tekstem</br>
-                overflow - odcinanie treści, która wystaje:</br>
-                overflow:hidden - ucina wystający tekst;</br>
-                overflow:visible - pokazuje ucięty tekst;</br>
-                overflow:auto - pojawi się scroll w pudełku</br>
-                z-index - definiuje,który element wyjdzie "na przeciw"; element z większą podaną liczbą jest na przedzie</br>
-                float - służy do opływania naszych elementów przez inne elementy; elemet zachowuje się jakby miał wartość display:inline-block;
-                wartości right/left okreslają, po której stronie na się znajdować element</br>
-                clear - rozszerza pudełko dostosowując je do wysokości floatów </br>
-            </p>
-        </section>
+            <section class="notes-section">
+                <h2>Atrybuty</h2>
+                <p>
+                <ul>
+                    <li>div - nie ma znaczenia semantycznego; jest często naużywany; stasowany do stylowania.</li></br>
+                    <li>display:</li></br>
+                    <li>display:block - elementy ustawiają się jeden pod drugim</li></br>
+                    <li>display:inline - elementy ustawiają się obok siebie; wartości width/height nie są brane pod
+                        uwagę;</li></br>
+                    <li>display:inline-block - nadaje elementom dodatkowe własności, które są niedostępne dla własności
+                        inline'owych, a są dostępne dla blockowych;</li></br>
+                    <li>lementy mogą mieć ustawiony width oraz height; jeśli mają odpowiednio dużo miejsca ustawiają się
+                        w linii; jeśli zmniejszymy okno, przeskakują
+                    <li>jeden pod drugim</li></br>
+                    <li>background:(000,000,000,0,x) - ostatnia wartość to znacznik przezroczystości</li></br>
+                    <li>width/height - szerokość/wysokość; ustawione "na sztywno" (nie zmniejszają się kiedy zmniejszymy
+                        okno)</li></br>
+                    <li>max-width - element (jeśli zmniejszymy okno) będzie zmniejszał się od momentu wartości width
+                    </li></br>
+                    <li>max-height - jeśli treści jest więcej niż wysokości, treść wyjedzie poza "ramkę"; rzadko
+                        stosowane</li></br>
+                    <li>min-width - musi mieć min Xpx szerokości; jeśli ma miejsce na więcej to dosyanie</li></br>
+                    <li>min-height - w przeciwieństwie do max-height, "ramka" będzie rozwijać się razem z tekstem</li>
+                    </br>
+                    <li>overflow - odcinanie treści, która wystaje:</li></br>
+                    <li>overflow:hidden - ucina wystający tekst;</li></br>
+                    <li>overflow:visible - pokazuje ucięty tekst;</li></br>
+                    <li>overflow:auto - pojawi się scroll w pudełku</li></br>
+                    <li>z-index - definiuje,który element wyjdzie "na przeciw"; element z większą podaną liczbą jest na
+                        przedzie</li></br>
+                    <li>float - służy do opływania naszych elementów przez inne elementy; elemet zachowuje się jakby
+                        miał wartość display:inline-block;</li></br>
+                    <li>wartości right/left okreslają, po której stronie na się znajdować element</li></br>
+                    <li>clear - rozszerza pudełko dostosowując je do wysokości floatów </li></br>
+                    <li>list-style - dostusowuje styl znaczników listy</li></br>
+                </ul>
+                </p>
+            </section>
         </div>
 
         <div class="row">
-        <section class="notes-section">
-            <p>
-            <h2>Jednostki</h2>
-            px - piksele; podstawowa jednostka przy tworzeniu stylów</br>
-            % - procenty</br>
-            vw - "viewport width"; procent z szerokości całego okna</br>
-            vh - "viewport height"; procent wysokości całego okna</br>
-            </p>
-        </section>
+            <section class="notes-section">
+                <p>
+                <h2>Jednostki</h2>
+                px - piksele; podstawowa jednostka przy tworzeniu stylów</br>
+                % - procenty</br>
+                vw - "viewport width"; procent z szerokości całego okna</br>
+                vh - "viewport height"; procent wysokości całego okna</br>
+                </p>
+            </section>
         </div>
 
         <div class="row">
-        <section class="notes-section">
-            <p>
-            <h2>Pozycjonowanie</h2>
-            Wyróżniamy następujące pozycje elemntów:
-            absolute - element wychodzi przed inne elementy.</br>
-            relative - pozycja relatywna; względem zdefinionego elementy inne elemrnty będą pozycjonowane (np. tekst w pudełku)</br>
-            static - pozycja domyślna dla elementów</br>
-            fixed - bardzo podobna do absolute, z tą róznicą, że element przesuwa się razem ze scrollem; przydaje się przy robienie np.menu czy ngłówków</br>
-            sticky - element zacznie  zjeżdżać razem ze scrollem; możemy ustawić element w taki spoób aby zjeżdżał tylko do określonego momentu (np. kiedy kończy sie pudełko,w którym sie znajduje)</br>
-            Pod pozycją możemy wpisać wartości top, bottom, right, left, które wyznaczają odległość elementu od danej krawędzi.</br>
-            </p>
-        </section>
+            <section class="notes-section">
+                <p>
+                <h2>Pozycjonowanie</h2>
+                Wyróżniamy następujące pozycje elemntów:
+                absolute - element wychodzi przed inne elementy.</br>
+                relative - pozycja relatywna; względem zdefinionego elementy inne elemrnty będą pozycjonowane (np. tekst
+                w pudełku)</br>
+                static - pozycja domyślna dla elementów</br>
+                fixed - bardzo podobna do absolute, z tą róznicą, że element przesuwa się razem ze scrollem; przydaje
+                się przy robienie np.menu czy ngłówków</br>
+                sticky - element zacznie zjeżdżać razem ze scrollem; możemy ustawić element w taki spoób aby zjeżdżał
+                tylko do określonego momentu (np. kiedy kończy sie pudełko,w którym sie znajduje)</br>
+                Pod pozycją możemy wpisać wartości top, bottom, right, left, które wyznaczają odległość elementu od
+                danej krawędzi.</br>
+                </p>
+            </section>
         </div>
 
         <div class="row">
-        <section class="notes-section">
-            <p>
-            <h2>Pudełkowa rewolucja</h2>
-            Atrybut box-sizing służy do określania wielkości pudełka, a dokładniej względem czego pudełko ma dopasować swoją wielkość</br>
-            box-sizing:content-box - jest to atrybut domyślny. Pudełko dopadowuje się do tekstu (nawet jesli jest określona szerokość i wysokość</br>
-            box-sizing:border-box - pudełko przyjmuje dokładnie takie wymiery jakie zostały mu nadane w szerokości i wysokości</br>
-            </p>
-        </section>
+            <section class="notes-section">
+                <p>
+                <h2>Pudełkowa rewolucja</h2>
+                Atrybut box-sizing służy do określania wielkości pudełka, a dokładniej względem czego pudełko ma
+                dopasować swoją wielkość</br>
+                box-sizing:content-box - jest to atrybut domyślny. Pudełko dopadowuje się do tekstu (nawet jesli jest
+                określona szerokość i wysokość</br>
+                box-sizing:border-box - pudełko przyjmuje dokładnie takie wymiery jakie zostały mu nadane w szerokości i
+                wysokości</br>
+                </p>
+            </section>
         </div>
 
         <div class="row">
-        <section class="notes-section">
-            <p>
-            <h2>Warto zapamiętać</h2>
-            Nie ma potrzeby dopisywania jednostki do 0.</br>
-            Jednostka % liczy się zawsze względem rodzica.</br>
-            Skrót do paddingu: padding: top,right,bottom,left. Zgodnie ze wskazówkami zegara</br>
-            Skrót do border: border: width,style,color.</br>
-            Jeśli mamy dwa absoluty to widoczny bedzie ten, który w CSS "jest dalej".</br>
-            Float nie służy do budowanie latoutów!</br>
-            Floatów nie stosuje sie za często. Najczęsciej do wstawiania zdjęć do tekstu.</br>
-            DON'T REPEAT YOURSELF!</br>
-            </p>
-        </section>
+            <section class="notes-section">
+                <p>
+                <h2>Warto zapamiętać</h2>
+                <ul>
+                    <li>Nie ma potrzeby dopisywania jednostki do 0.</li></br>
+                    <li>Jednostka % liczy się zawsze względem rodzica.</li></br>
+                    <li>Skrót do paddingu: padding: top,right,bottom,left. Zgodnie ze wskazówkami zegara</li></br>
+                    <li>Skrót do border: border: width,style,color.</li></br>
+                    <li>Jeśli mamy dwa absoluty to widoczny bedzie ten, który w CSS "jest dalej".</li></br>
+                    <li>Float nie służy do budowanie latoutów!</li></br>
+                    <li>Floatów nie stosuje sie za często. Najczęsciej do wstawiania zdjęć do tekstu.</li></br>
+                    <li>DON'T REPEAT YOURSELF!</li></br>
+                </ul>
+                </p>
+            </section>
         </div>
 
-  
-    
+
+
     </main>
     <footer>
-        <h3 class="footer">Strona do <a class="footer-link" href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.</h3>
+        <h3 class="footer">Strona do <a class="footer-link" href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.
+        </h3>
     </footer>
     <script src="main.js"></script>
 
