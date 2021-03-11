@@ -6,7 +6,9 @@ html{
 }
 
 body {
-  background-color: #2B2D42;
+  background: rgb(42,44,65);
+  background: linear-gradient(23deg, rgba(42,44,65,1) 0%, rgba(50,54,91,1) 31%, 
+  rgba(13,114,205,1) 55%, rgba(28,127,218,1) 74%, rgba(146,220,229,1) 96%);
 }
 .header-navigation{
   position:fixed;
@@ -23,7 +25,6 @@ body {
   border-left:0px;
   border-right:0px;
   border-bottom: 2px;
-  border-radius: 7px;
   border-color: #92DCE5;
   border-style: solid;
   background-color: #2B2D42;
@@ -67,7 +68,7 @@ main{
 }
 
 h1{
-  color: #92DCE5;
+  color: #753e70;
   font-family:Georgia, 'Times New Roman', Times, serif;
   padding-top: 70px;
   margin: auto;

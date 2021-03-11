@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel=stylesheet type="text/css">
+    <link href="../css/normalize.css" rel=stylesheet type="text/css">
+    <link href="../css/style.css" rel=stylesheet type="text/css">
 </head>
 
 <body>
@@ -231,8 +232,122 @@
             <section class="notes-section">
                 <p>
                 <h2>Chodź pomaluj mój świat! - parę słów o tłach</h2>
-                Jeśli chcemy aby tłem naszej strony był obraz/zdjęcie itp. Użyjemy 
+                Jeśli chcemy aby tłem naszej strony był obraz/zdjęcie itp. Użyjemy
                 właściwości <strong>background-image: url('ścieżka-do-pliku')</strong>.
+                <p></p>
+                Pozycję tła ustawiamy za pomocą wartości <strong>background-position</strong>.</br>
+                <ul>
+                    <li>background-position: </li>
+                    <ul>
+                        <li>0 0</li>
+                        <li>pozycja-y pozycja-x </li>
+                        <li>top right </li>
+                        <li>bottom left </li>
+                        <li>center center - tło zawsze będzie zaczynało się od środka w pionie i poziomie</li>
+                        <li>xx% xx% </li>
+                        <li>xxpx xxpx </li>
+                        <li>... ... </li>
+                    </ul>
+                </ul>
+                <p></p>
+                Powtarzalność tła:</br>
+                <ul>
+                    <li>background-repeat: </li>
+                    <ul>
+                        <li>repeat</li>
+                        <li>repeat-x - tło jest powtarzane tylko po osi x</li>
+                        <li>repeat-y - tło jest powtarzane tylko po osi y</li>
+                        <li>no-repeat </li>
+                        <li>round - obrazek tworzący tło obrazkowe interesującego nas elementu HTML
+                            będzie powtarzany zarówno w poziomie, jak i w pionie oraz (jeżeli będzie to konieczne)
+                            zostanie on przeskalowany w taki sposób, aby wypełnić równomiernie w całości poszczególny
+                            element</li>
+                        <li>space - obrazek tworzący tło obrazkowe interesującego nas elementu HTML będzie
+                            powtarzany zarówno w poziomie, jak i w pionie oraz (jeżeli będzie to konieczne)
+                            zostanie on rozmieszczony (bez dodatkowego skalowania) w taki sposób, aby zmieścić się w
+                            całości w poszczególnym rozmiarze wspomnianego elementu HTML</li>
+                    </ul>
+                </ul>
+                <p></p>
+                Zaczepienie tła (<strong>background-attachment</strong>) definiuje czy tło przewija się razem ze stroną
+                czy jest nieruchome.</br>
+                <ul>
+                    <li>background-attachment: </li>
+                    <ul>
+                        <li>scroll - domyślne usatwienie; tło przesuwa się wraz ze stroną</li>
+                        <li>fixed - tło jest nieruchome</li>
+                        <li>local - tło przesuwa się razem z contentem</li>
+                    </ul>
+                </ul>
+                <p></p>
+                Za pomocą właściwości <strong>background-origin </strong>możemy określić obszar pozycjonowania obrazka
+                tworzącego tło obrazkowe interesującego nas elementu HTML. Mowa tu o obszarze między innymi względem
+                którego określana jest pozycja początkowa obrazka tworzącego tło obrazkowe elementu HTML.</br>
+                Innymi słowy jest to miejsce od którego zaczyna się nasze tło.</br>
+                Raczej się tego nie wykorzystuje.</br>
+                <ul>
+                    <li>background-origin: </li>
+                    <ul>
+                        <li>padding-box</li>
+                        <li>border-box</li>
+                        <li>content-box</li>
+                    </ul>
+                </ul>
+                Za pomocą właściwości <strong>background-clip</strong> możemy określić sposób przycięcia tła
+                interesującego
+                nas elementu HTML.</br>
+                <ul>
+                    <li>background-clip: </li>
+                    <ul>
+                        <li>border-box - domyślna wartość</li>
+                        <li>padding-box</li>
+                        <li>content-box - tło ogranicza się tylko do contentu (zaczyna się od treści elementu)</li>
+                    </ul>
+                </ul>
+                <p></p>
+                Kolor tła ustawiamy za pomocą <strong>background-color</strong>.</br>
+                Możemy zapisać kolor tła z użyciem wartośći rgb (255,255,255,<strong>0.4</strong>), gdzie ostatnia
+                liczba w nawiasie
+                wskazuje na przezroczystość. Przezroczystość zapisujemy w przedziale od 0 do 1, gdzie 0 to w pełni
+                przezroczyste
+                a 1 to nieprzezroczyste</br>
+                <p></p>
+                Własność określająca wilkość tła:</br>
+                <ul>
+                    <li>background-size: </li>
+                    <ul>
+                        <li>auto - domyślnie obrazek tworzący tło obrazkowe elementu HTML posiada niezmieniony rozmiar
+                        </li>
+                        <li>cover - rozmiar obrazka tworzącego tło obrazkowe interesującego nas elementu HTML zostanie
+                            przeskalowany w taki sposób, aby wypełnić w całości rozmiar <strong>szerokości</strong>
+                            obszaru pozycjonowania tego obrazka.</li>
+                        <li>contain - rozmiar obrazka tworzącego tło obrazkowe interesującego nas elementu HTML zostanie
+                            przeskalowany
+                            w taki sposób, aby wypełnić w całości rozmiar <strong>wysokości</strong> obszaru
+                            pozycjonowania tego obrazka.</li>
+                        <li>width height - Składnik width <strong>jest wymaganym</strong> składnikiem wzorca wartości
+                            właściwości background-size.
+                            Składnik width określa rozmiar szerokości obrazka tworzącego tło obrazkowe interesującego
+                            nas elementu HTML. Składnik
+                            height <strong>nie jest wymaganym</strong> składnikiem wzorca wartości właściwości
+                            background-size.</li>
+                    </ul>
+                </ul>
+                <p></p>
+                Możemy te wszystkie wartości zdefiniować w jednym miejscu. Wygląda to tak:</br>
+                <ul>
+                    <li>background: </li>
+                    <ul>
+                        <li>url(sweettexture.jpg)           /* image */</li>
+                        <li>top center / 200px 200px        /* position / size */</li>
+                        <li>no-repeat                       /* repeat */</li>
+                        <li> fixed                          /* attachment */</li>
+                        <li> padding-box                    /* origin */</li>
+                        <li> content-box                    /* clip */</li>
+                        <li>red;                            /* color */</li>
+                    </ul>
+                </ul>
+                <p></p>
                 </p>
             </section>
         </div>
