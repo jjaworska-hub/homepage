@@ -116,7 +116,123 @@
             <section class="notes-section">
                 <p>
                 <h2>Normalizacja i reset</h2>
-                    Reset powinien wyłączyć nam wszystkie style w przeglądarce
+                Reset powinien wyłączyć nam wszystkie style w przeglądarce</br>
+                Normalizacja jest lepszym podejściem od zwykłych resetów, ponieważzatrzymują przydatne wartości
+                domyślne,
+                ujednolicają wygląd dużej liczby elementów, poprawiają najpopularniejsze błędy i nieścisłości silników
+                renderujących przeglądarek, zwiększają użyteczność, a przede wszystkim tłumaczą dokładnie każdą linijkę
+                kodu.</br>
+                Normalizacje nie resetuje, a dostosowuje naszą stronę do innych przeglądarek.</br>
+                <p></p>
+                Warto na początku każdego projektu dodać w pliku css taką formułkę:</br>
+                html {</br>
+                box-sizing: border-box;</br>
+                }</br>
+                *, *:before, *:after {</br>
+                box-sizing: inherit;</br>
+                }</br>
+                <p></p>
+                Dzięki temu cała strona ma sizing border-box jednak wciąż możemy ustawić sizing konkretnego
+                elemnetu na inny niż border-box.</br>
+                </p>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Weird flex but ok</h2>
+                Komendą uaktywniającą flex jest <strong>display:flex</strong>.</br>
+                Kierunek flexu (a raczej jego elementów) ustawiamy za pomocą:</br>
+                <ul>
+                    <li>flex-direction:</li>
+                    <ul>
+                        <li>row</li>
+                        <li>column</li>
+                        <li>row-reverse</li>
+                        <li>column-reverse</li>
+                    </ul>
+                </ul>
+                Zwijanie wiersza/kolumny:</br>
+                <ul>
+                    <li>flex-wrap:</li>
+                    <ul>
+                        <li>nowrap</li>
+                        <li>wrap</li>
+                        <li>wrap-reverse</li>
+                    </ul>
+                </ul>
+                <p></p>
+                Aby zapisać obie wartości w skrócie używamy <strong>flex-flow:flex-direction flex-wrap</strong>.</br>
+                Przykład: <strong>flex-flow:row nowrap</strong>.</br>
+                <p></p>
+                Ustawianie elementów wzdłuż osi flex-direction:</br>
+                <ul>
+                    <li>justify-content</li>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                    </ul>
+                </ul>
+                <p></p>
+                Ustawianie wierszy/kolumn wzdłuż osi przeciwnej do flex-direction (taki justify-content dla drugiej
+                osi):</br>
+                <ul>
+                    <li>align-content</li>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                        <li>stretch</li>
+                    </ul>
+                </ul>
+                <p></p>
+                Ustawianie <strong>elementu</strong> wzdłuż osi przeciwnej do flex-direction:</br>
+                <ul>
+                    <li>align-self</li>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>stretch</li>
+                        <li>baseline</li>
+                    </ul>
+                </ul>
+                <p></p>
+                Kolejność ustawiamy za pomocą <strong>order:liczba całkowita</strong>.</br>
+                <p></p>
+                Za pomocą <strong>flex-grow </strong>możemy określić możliwość zwiększenia rozmiarów flex items;
+                zasada wzrostu oparta jest o proporcje.</br>
+                CZYLI jeśli ustawimy na jakimś elemencie flex-grow: 2, będzie on zajmować 2 razy więcej miejsca od
+                pozostałych
+                elementów.</br>
+                <p></p>
+                <strong>Flex-shrink</strong> definiuje czy ściskać elementy poniżej ich orginalnego rozmiaru i jaką
+                część
+                elementu ścisnąć proporcjonalnie do stopnia ściśnięcia innych elementów.</br>
+                <p></p>
+                <strong>Flex-basis</strong> definiuje domyślny rozmiar elementu przed/bez dzielenia przestrzeni.</br>
+                <p></p>
+                Możemy zapisać grow,shrink i basis skrótem<strong>flex: flex-grow, flex-shrink,
+                    flex-basis</strong>.</br>
+                <p></p>
+                Strona ściągawka: <b><a class="links-link"
+                        href="http://drakonica.pl/dokumenty/flexbox_zestawienie.htm">Flexbox - ściągawka</a></b></br>
+                </p>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Chodź pomaluj mój świat! - parę słów o tłach</h2>
+                Jeśli chcemy aby tłem naszej strony był obraz/zdjęcie itp. Użyjemy 
+                właściwości <strong>background-image: url('ścieżka-do-pliku')</strong>.
                 </p>
             </section>
         </div>
