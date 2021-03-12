@@ -164,3 +164,7 @@ h2 {
   color:#92DCE5;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.switch{
+  list-style: none;
+}

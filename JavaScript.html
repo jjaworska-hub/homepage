@@ -304,6 +304,77 @@
                 Aby połączyć ze sobą warunki używamy wyrażenia <strong>&&</strong>(AND). Warunek wykona się jeśli oba
                 (lub więcej) warunki są prawdziwe.</br>
                 Innym operatorem jest<strong> || </strong>(OR), gdzie przynajmniej jeden warunek ma być true.</br>
+                Operator <strong>!</strong> (NOT) odwraca wartość wyrażenia logicznego. Przykład:</br>
+                <p></p>
+                if (!('JavaScript' == 'Java')) {</br>
+                // ten kod się wykona</br>
+                }</br>
+                <p></p>
+                W skrócie, zaprzeczenie fałszu to prawda (!false => true), a zaprzeczenie prawdy to fałsz (!true =>
+                false).</br>
+                <p></p>
+                Oprócz if mamy również <strong>else</strong>. Else jest to treść kody,która wykona się jeśli
+                stwierdzenie z if okaże się
+                nieprawdziwe.</br>
+                <p></p>
+                if (myVariable == 4) {</br>
+                // wykonaj kod jeśli true</br>
+                } else {</br>
+                // wykonaj kod jeśli false</br>
+                }</br>
+                <p></p>
+                Aby dodać jeszcze jedną gałąź pod else użyjemy <strong>else if</strong>. Przykład:</br>
+                <p></p>
+                if (myVariable == 4) {</br>
+                // wykonaj kod jeśli true</br>
+                } else if (myVariable == 8) {</br>
+                // wykonaj kod jeśli myVariable == 8</br>
+                }</br>
+                <p></p>
+                Istnieje również konstrukcja, która nazywa się <strong>switch</strong>, która pozwala w wygodny
+                sposób sprawdzić ciąg warunków i wykonać różne instrukcje w zależności od wyników porównywania.
+                Ma ona ogólną postać:</br>
+                <ul class="switch">
+                    <li>switch(wyrażenie){</li>
+                    <ul>case wartość1:</ul>
+                    <li>instrukcje1;</li>
+                    <li>break;</li>
+                    <ul>case wartość2:</ul>
+                    <li>instrukcje2;</li>
+                    <li>break;</li>
+                    <ul>case wartość3:</ul>
+                    <li>instrukcje3;</li>
+                    <li>break;</li>
+                    <ul>default:</ul>
+                    <li>instrukcje4;</li>
+                    }
+                </ul>
+                którą należy rozumieć następująco: sprawdź wartość wyrażenia wyrażenie, jeśli wynikiem jest wartość1,
+                to wykonaj intrukcje1 i przerwij wykonywanie bloku switch (przerwanie jest wykonywane przez instrukcję
+                break).
+                Jeśli wynikiem jest wartość2, to wykonaj intrukcje2 i przerwij wykonywanie bloku switch, a jeśli
+                wynikiem jest
+                wartość3, to wykonaj intrukcje3 i przerwij wykonywanie bloku switch. Jeśli nie zachodzi żaden z
+                wymienionych
+                przypadków, wykonaj instrukcje4 i zakończ blok switch. Blok default jest jednak opcjonalny i może zostać
+                pominięty.
+                <p></p>
+                Istnieje zapis skrócony konstukcji warunkowej. Wygląda on tak:</br>
+                <p>
+                    (zmienna1 > zmienna2) ? console.log('true') : console.log('false')
+                </p>
+                Przykład:
+                <p>
+                    (32 > 20) ? console.log('to prawda') : console.log('to nieprawda');
+                </p>
+                W zapisie klasycznym wyglądałby to tak:
+                <p>
+                    if (32 > 20) {</br>
+                        console.log('to prawda')</br>
+                    } else {</br>
+                        console.log('to nieprawda')</br>
+                    }</br>
+                </p>
                 </p>
             </section>
         </div>
