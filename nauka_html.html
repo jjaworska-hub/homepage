@@ -130,16 +130,94 @@
             <section class="notes-section">
                 <p>
                 <h2>Formularze</h2>
-                Znacznik <strong>form</strong> jest swego rodzaju opakowaniem dla naszego formularza. Podstawowym elementem, który
-                buduje nasz formularz jest <strong>input</strong>. Każdy input powinien mieć swoją nazwę (name). Należy dodać też
-                id (może mieć ono taką samą nazwę jak name). Nie stylujemy za pomocą id! ID jest potrzebne do indentyfikacji a nie do
+                Znacznik <strong>form</strong> jest swego rodzaju opakowaniem dla naszego formularza. Podstawowym
+                elementem, który
+                buduje nasz formularz jest <strong>input</strong>. Każdy input powinien mieć swoją nazwę (name). Należy
+                dodać też
+                id (może mieć ono taką samą nazwę jak name). Nie stylujemy za pomocą id! ID jest potrzebne do
+                indentyfikacji a nie do
                 stylizowania.</br>
-                Znacznik <strong>label</strong> tworzy nam znacznik naszego pola. Dodając do label wyrażenie <strong>for="id_inputu"</strong>
+                Znacznik <strong>label</strong> tworzy nam znacznik naszego pola. Dodając do label wyrażenie
+                <strong>for="id_inputu"</strong>
                 sprawiamy,że label jest przyczepiony do inputu (klikając na niego aktywujemu pole input).</br>
                 Domyślnym typem inputa jest tekst.
                 Kolejnym atrybutem inputa jest value (wartość). Uzupełni on nasze pole o wskazaną wartość.
-                Istnieje również atrybut o nazwie placeholder, która służy do wyświetlenia podpowiedzi w okienku inputa np. "Please 
+                Istnieje również atrybut o nazwie placeholder, która służy do wyświetlenia podpowiedzi w okienku inputa
+                np. "Please
                 enter your name".
+                <p>
+                    Kolejnym znacznikiem jest <strong>fieldset</strong>, który grupuje pola inputu. Innym typem naszego
+                    inputa
+                    jest typ<strong> radio </strong>(type="radio"), które jest takimi "guzikami" w formularzu. Co jest
+                    ważne w radio buttonach to to,że name dla całej grupy musi
+                    być taki sam.
+                </p>
+                <p>
+                    Następny typ to <strong>checkbox</strong> (type="checkbox"). Jest to taki element,który możemy
+                    "zaptaszkować".
+                    Ciekawostka: jeśli chcemy aby w naszym formularzy niektóre radio i checkboxy były zaznaczone możemy
+                    użyć atrybutu
+                    <strong>checked</strong>. Nie trzeba dopisywać do niego dodatkowych name, id itp..
+                </p>
+                <p>
+                    Typami, które pomagają nam spredzyzować jakie dane chcemy aby zostały wpisane w naszym formularzu są
+                    number,tel,email.
+                </p>
+                <p>
+                    Kolejny typ to typ <strong>range</strong>. Zapisujemy go w następujący sposób:
+                <p>
+                    input type="range" min="0" max="100" step="5"
+                </p>
+                </p>
+                <p>
+                    Typ <strong>password</strong> używamy do haseł.
+                </p>
+                <p>
+                    Typ <strong>file</strong> służy do przekazywania plików. Np. awatary.
+                </p>
+                <p>
+                    Kolejny element to element <strong>select</strong>. Select pomaga nam w zrobioniu takiej "listy do
+                    wyboru". Zawiera w sobie taki atrybut jak <strong>option</strong>.
+                </p>
+                <p>
+                    Następnym znacznikiem jest <strong>textarea</strong>, który tworzy pole do wpisywania tekstu. Np. "O
+                    mnie.." itp..
+                </p>
+                <p>
+                    Typ submit (input type="submit") jest typem inputa, który będzie wysyłać nam nasz formularz. Submit
+                    jako jedyny nie zawiera labela.</br>
+                </p>
+                <p>
+                    Aby wysłać gdzieś nasz formularz potrzebujemy atrybutu a nazwie <strong>action</strong>
+                    (action="url://z-którym-gadamy").
+                    Do sprawdzenia czy formularz działa poprawnie możemy użyć strony
+                    <b><a class="links-link" href="https://dev.cotenfrontend.pl/">Form Checker</a></b>.
+                </p>
+                <p>
+                    Domyślną metodą wysyłania formularzy jest metoda <strong>get</strong> (method="get"). Oprócz niej istnieje jeszcze metoda 
+                    <strong>post</strong> (method="post"). Post działa w ten sposób, że adres URL "jest czysty". Jest to bardziej
+                    bezpieczniejsze, ponieważ nie da się zmodyfikować treści lub ominąć formularz.
+                </p>
+                <p>
+                    Istnieje też atrybut jak<strong> enctype</strong>, które wartością domyślną jest "application/x-www-form-urlencoded". Jednak 
+                    jeśli chcemy wysyłać pliki powinniśmy zmienić tę wartość na "multipart/form-data".
+                </p>
+                </p>
+            </section>
+        </div>
+        
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Walidacja formularzy</h2>
+                Walidacja to sprawdzanie poprawności danych wprowadzanych do formularzy.</br>
+                Zacznijmy od atrybutu zwanego <strong>required</strong>. Atrybut sprawia,że formularz nie zostanie 
+                wysłany dopóki użytkownik nie uzupełn wymaganego pola/pól. Dopisujemy required do pól formularza, które
+                mają być konieczne do wysłania formularza.
+                <p>
+                    Inną formą walidacji są tzw. patterny z wykorzystaniem wyrażeń regularnych. Wyrażenia regularne
+                    jest to pewien rodzaj zapisy pozwalający na wykrywanie pewnych ciągów znaków.
+                </p>
                 </p>
             </section>
         </div>
@@ -152,6 +230,7 @@
                     <li>Jeśli coś jest powtarzalne na podstronach wstawiamy to przed "main"</li></br>
                     <li>Nie używamy tabel do budowania layoutów!</li></br>
                     <li>Atrybut placeholder nie zastępuje elementu label!</li></br>
+                    <li>Walidacja po stronie frontendu nie zastępuje walidacji po stronie backendu!</li></br>
                 </ul>
                 </p>
             </section>
