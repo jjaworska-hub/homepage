@@ -338,16 +338,137 @@
                 <ul>
                     <li>background: </li>
                     <ul>
-                        <li>url(sweettexture.jpg)           /* image */</li>
-                        <li>top center / 200px 200px        /* position / size */</li>
-                        <li>no-repeat                       /* repeat */</li>
-                        <li> fixed                          /* attachment */</li>
-                        <li> padding-box                    /* origin */</li>
-                        <li> content-box                    /* clip */</li>
-                        <li>red;                            /* color */</li>
+                        <li>url(sweettexture.jpg) /* image */</li>
+                        <li>top center / 200px 200px /* position / size */</li>
+                        <li>no-repeat /* repeat */</li>
+                        <li> fixed /* attachment */</li>
+                        <li> padding-box /* origin */</li>
+                        <li> content-box /* clip */</li>
+                        <li>red; /* color */</li>
                     </ul>
                 </ul>
                 <p></p>
+                </p>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Grid</h2>
+                Grid powstawł z potrzeby stworzenia prostego systemu do budowania layoutów (tabele, floaty, div-oza
+                itp. nie spełniały oczekiwań i były kiepską praktyką).</br>
+                Przyjazny zapis i możliwość łatwej edycji w kontekście responsywności.</br>
+                Standard dopasowany do aktualnego stanu stron internetowych.</br>
+                <p>
+                    Grid działa tylko na bezpośrednie swoje dzieci. (Nie działa to na wnuki,prawnuki itd.)
+                </p>
+                <p>
+                    Jednostka fr sumuje się jak ułamki. Czyli jeśli mamy trzy elementy o wilekości 1fr,1fr i 2fr, to
+                    elementy będą miały wielkość 1/4,1/4 i 2/4.
+                </p>
+                <ul>
+                    <li>Własności gridowe:</li>
+                    <ul>
+                        <li>display:grid - tworzy kontener dla grida</li>
+                        <li>grid-template-columns: wartości po spacji - tworzy kolumny; definiujemy wielkość i ilość
+                            kolumn; np. 100px 300px 200px to będą 3 kolumny o określonej długości</li>
+                        <li>grid-template-rows: wartości po spacji - definuje liczbę wierszy; w wierszach rzadko
+                            definujemy wysokość;</li>
+                        <li>repeat(ileRazy, wartość) - używamy np. kiedy chcemy stworzyć ileś kolumn o tej samej
+                            wielkości;
+                            Przykład użycia: grid-template-columns: repeat(4,1fr); Możemy po nawiasia dopisać kolejną
+                            wartość, która będzie wskzywać na ostatnią kolumnę;
+                        </li>
+                        <li>column-gap: rozmiar odstępu - odstęy między kolumnami; przerwy tworzą się tylko między
+                            elementami
+                            grida;
+                        </li>
+                        <li>row-gap: rozmiar odstępu - odstęp między wierszami</li>
+                        <li>minmax(minWartość, maxWartość) - minimalna i maksymalna wartość jaką ma przyjmować element;
+                        </li>
+                        <li>grid-template-areas: - <b><a class="links-link"
+                                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas">Wytłumaczenie</a></b></br>
+                        </li>
+                        <ul>
+                            <li>"header header"</li>
+                            <li>"article aside"</li>
+                            <li>"footer footer"</li>
+                        </ul>
+                        <li>grid-area: - zapis skrótowy</li>
+                        <ul>
+                            <li>nazwa obszaru</li>
+                            <li>row-start / col-start</li>
+                            <li>row-end> / col-end</li>
+                        </ul>
+                        <li>grid-row-start:</br>
+                            grid-row-end:</br>
+                            grid-column-start:</br>
+                            grid-column-end:</li>
+                        <ul>
+                            <li>numer / [nazwa] / span</li>
+                        </ul>
+                    </ul>
+                </ul>
+                </ul>
+                </p>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Media queries & mobile first</h2>
+                <p>
+                    Sercem media queries jest słowo kluczowe <strong>@media</strong>. Możemy myśleć o tym jako
+                    odzielnym css'ie w css. Jest to swego radzaju if (jeśli screen to.... jeśli komórka to....).
+                </p>
+                <ul>
+                    <li>@media</li>
+                    <ul>
+                        <li>screen</li>
+                        <li>print</li>
+                        <li>all</li>
+                        <li>...</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>Media feature:</li>
+                    <ul>
+                        <li>min-width</li>
+                        <li>max-width</li>
+                        <li>color</li>
+                        <li>aspect-ratio</li>
+                        <li>orientation</li>
+                        <li>...</li>
+                    </ul>
+                </ul>
+                <p>
+                    Przykład media queries:</br>
+                <ul class="media-queries">
+                    <li> @media screen and (max-width: 600px){</li>
+                    <ul class="media-queries">
+                        <li>body {</li>
+                        <ul class="media-queries">
+                            <li>background: red;</li>
+                            <li>}</li>
+                        </ul>
+                        <li>}</li>
+                    </ul>
+                </ul>
+                </p>
+                <p>
+                    Powyższy kod powoduje zmianę tła ekranu jeśli będzie miał mniej niż 600px, tło strony zmieni się na
+                    czerwone.
+                </p>
+                <p>
+                    Podejśćia <strong>mobile-first</strong> zakłada,że najpierw tworzymy style dostosowane do urządzeń
+                    mobilnych (najczęściej komórek), a potem za pomocą media-queries dopasowujemy je do strony w przeglądarce.
+                </p>
+                <p>
+                    <strong>Breakpointy</strong> to takie punkty, na których następuje "łamanie" strony. Są to
+                    szerokości, na których następuje jakaś zmiana.
+                </p>
                 </p>
             </section>
         </div>
@@ -365,12 +486,12 @@
                     <li>Float nie służy do budowanie latoutów!</li></br>
                     <li>Floatów nie stosuje sie za często. Najczęsciej do wstawiania zdjęć do tekstu.</li></br>
                     <li>DON'T REPEAT YOURSELF!</li></br>
+                    <li>Grid nie zastępuje flexboxa. Wzajemnie się uzupełniają.</li></br>
+                    <li>W Gridzie wszystko zamyka się w regularnych prostokątach.</li></br>
                 </ul>
                 </p>
             </section>
         </div>
-
-
 
     </main>
     <footer>
