@@ -370,11 +370,48 @@
                 W zapisie klasycznym wyglądałby to tak:
                 <p>
                     if (32 > 20) {</br>
-                        console.log('to prawda')</br>
+                    console.log('to prawda')</br>
                     } else {</br>
-                        console.log('to nieprawda')</br>
+                    console.log('to nieprawda')</br>
                     }</br>
                 </p>
+                </p>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2>Eventy</h2>
+                Atrybut <strong>element.addEventListener(type, listener [, options])</strong> służy do dodawania obsługi
+                zdarzeń do dokumentu. Typ (type) w kodzie może być np. wydarzeniem związanym z myszką. W drugim
+                parametrze (listner)
+                wpisujemy nazwę funkcji,którą chcemy podpiąć.
+                </p>
+                <p>
+                    Przepis na działający przycisk:</br>
+                    Musmy pobrać przycisk(button), dodać do niego .addEventListener, który będzie działał na kliknęcie
+                    ('click') i podpiąć
+                    pod to wszystko jakąś funkcję (myClick).</br>
+                    Wzór:</br>
+                    button.addEventListener('click',myClick);</br>
+                    Gdzie myClick to:</br>
+                    const myClick = () => {</br>
+                    const heading = document.querySelector(".main__heading--js");</br>
+                    heading.innerHTML = `Witaj Drogi Odwiedzający, nazywam się Maciek`;</br>
+                    }</br>
+                <p>
+                    Inną metodą na stworzenie guzika jest stworzenie funkcji strzałkowej .addEventListenerze z (e).</br>
+                    Przykład:</br>
+                    button.addEventListener('click',(e) => {</br>
+                    const heading = document.querySelector(".main__heading--js");</br>
+                    heading.innerHTML = `Witaj Drogi Odwiedzający, nazywam się Maciek`;</br>
+                    })</br>
+                    </br>
+                    (e) - Event</br>
+                    target - jeśli chcemy zrobić coś z danym elementem po kliknięciu</br>
+                </p>
+
                 </p>
             </section>
         </div>
