@@ -180,6 +180,7 @@ aside:nth-of-type(2) {
   list-style: none;
 }
 
+
 @media (max-width:600px){
   body{
     width:100%;
@@ -188,10 +189,25 @@ aside:nth-of-type(2) {
     padding-bottom: auto;
     padding-top: auto;
     width:100%;
+    min-height: 60px;
+    display:none;
   }
+
+  .navigation--open{
+    display:block;
+  }
+  
+
   .navigation-link{
     font-size: small;
     margin-right: 1px;
+    display:block;
+    margin-top: 2px;
+  }
+  .hamburger{
+    position:absolute;
+    top:16px;
+    right:16px;
   }
   main{
     padding:10px;
@@ -226,3 +242,8 @@ aside:nth-of-type(2) {
     width:100%;
   }
 }
+ @media (min-width:600px){
+   .hamburger{
+     display: none;
+   }
+ }
