@@ -53,6 +53,11 @@ body {
   text-decoration: none;
 }
 
+.navigation-link:hover{
+  background-color:#72b7c0 ;
+  border-color:#72b7c0;
+}
+
 main{
   display: flex;
   flex-direction: column;
@@ -140,6 +145,24 @@ aside:nth-of-type(2) {
   width:570px;
   color: #2B2D42;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.before-after::before{
+  content:"";
+  display:inline-block;
+  width:12px;
+  height:12px;
+  background-color: tomato;
+  border-radius: 50%;
+}
+
+.before-after::after{
+  content:"";
+  display:inline-block;
+  width:12px;
+  height:12px;
+  background-color: tomato;
+  border-radius: 50%;
 }
 
 
