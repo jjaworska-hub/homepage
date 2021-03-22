@@ -429,6 +429,42 @@
         <div class="row">
             <section class="notes-section">
                 <p>
+                <h2>NPM & NPX</h2>
+                Dlaczego jest nam potrzebny NPM? Ponieważ:</br>
+                <ul>
+                    <li>dodajemy do projektów sporo gotowych bibliotek / narzędzi</li>
+                    <li>nie można polegać na konfiguracji edytora/ jego wtyczkach</li>
+                    <li>uniwersalne źródło ze wszystkimi narzędziami </li>
+                    <li>dostęp do aktualizacji</li>
+                </ul>
+                W dużym skrócie, NPM to taki app store / sklep play dla frontendowca. Inaczej, jest to taka skrzynka z
+                narzędziamy, których możemy użyć w naszym projekcie.
+                <p>
+                    Aby projekt mógł korzystać z dobrodziejstw NPM, używamy w terminalu komendy npm init lub npm init
+                    -y.
+                    Komendy tej używamy w projekcie tylko raz.
+                </p>
+                <p>Do zainstalowania paczki w projekcie służy komenda npm install <"nazwa_paczki"> --save /
+                        --save-dev.</br>
+                        -- save używamy jeżeli chcemy aby nasza paczka była wykorzystywana w jakiś sposób w tym co
+                        widzimy w przeglądarace (m.in. normalize.css jest taką paczką). Natomiast --save-dev jest
+                        używany w celu rozbudowy owego
+                        oprogramowania (czyli jakieś narzędzia typowo deweloperskie).</p>
+                </p>
+                <p>
+                    Nie commitujemy node_modules (każdy może zrobić npm install i sobie ściągnąć wymagane paczki).
+                    Nie edytujemy niczego w katalogach.
+                </p>
+                <p>
+                    Alternatywą dla NPM'a jest np. <b><a class="links-link" href="https://yarnpkg.com/">Yarn</a></b>.
+                </p>
+
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
                 <h2>Warto zapamiętać</h2>
                 <ul>
                     <li>Zmianna to nie wartość!</li></br>
