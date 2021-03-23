@@ -499,6 +499,60 @@
         <div class="row">
             <section class="notes-section">
                 <p>
+                <h2>Sass</h2>
+                Dlaczego potrzebujemy Sassa? Ponieważ CSS przysparza nam pewnych problemów, takich jak:
+                <ul>
+                    <li>porozrzucane klasy (bałagan w plikach)</li>
+                    <li>@media oddzielone od elementu (konieczność ponownego definiowania)</li>
+                    <li>kiepska czytelność plików (szczególnie przy zagnieżdżeniach)</li>
+                    <li>brak możliwości definiowania funkcji do robienia podobnych rzeczy</li>
+                </ul>
+                W Sassie mamy możliwość dopisywania zmiennych. Na przykład, aby dopisać kolor do zminnej wyżjemy kodu:</br>
+                <p>$myfavouritegray: #ccc;</p>
+                <p>
+                    Własność @mixin umożliwia nam wypisywanie zbioru wartości, ktróre możemy dodawać do elementów/klas za pomocą
+                    @include. Przykład: </br>
+                    <p>
+                        @mixin borderBackground {</br>
+                            border-radius:16px;</br>
+                            background-color:pink;</br>
+                        }</br>
+                    </p>
+                    <p>
+                        .main {</br>
+                            color: $myfavouritegray;</br>
+                            @include borderBackground;</br>
+                        }</br>
+                    </p>
+                    Co ciekawe, możemy również stworzyć @mixin, który będzie przyjmoawł parametry.
+                    <p>
+                        @mixin borderBackgroundParameter ($radius, $background){
+                            border-radius: $radius;
+                            background: $background;
+                        }
+                    </p>
+                    Aby dodać taki @mixin używamy kodu:</br>
+                    <p>
+                        @include borderBackgroundParameter(20px, red);
+                    </p>
+                    Istnieje też coś takiego jak @extend. Zapisujemy go w taki sposób:</br>
+                    <p>
+                        .main {</br>
+                            color: $myfavouritegray;</br>
+                            @include borderBackgroundParameter(20px, red);</br>
+                            @extend .font-style;
+                    </p>
+                    Od @mixina różni się tym,że nie dopisuje wartości bezpośrednio do klasy, tylko tworzy oddzielny zapis
+                    na górze CSS.
+                </p>
+                Kolejną funkcją Scss jest parent selector. (odsyłam do filmiku <b><a class="links-link" href="https://edu.devstyle.pl/products/wtf-2/categories/3127101/posts/10427013">SASS/SCSS</a></b>).
+                </p>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
                 <h2>Warto zapamiętać</h2>
                 <ul>
                     <li>Nie ma potrzeby dopisywania jednostki do 0.</li></br>
