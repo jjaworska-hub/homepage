@@ -13,10 +13,10 @@
 <body>
     <header class="header-navigation">
         <nav class="navigation">
-            <a class="navigation-link" href="index.html">Strona główna</a>
-            <a class="navigation-link" href="nauka_html.html">HTML</a>
-            <a class="navigation-link" href="nauka_css.html">CSS</a>
-            <a class="navigation-link" href="JavaScript.html">JavaScript</a>
+            <a class="navigation__link" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka_html.html">HTML</a>
+            <a class="navigation__link" href="nauka_css.html">CSS</a>
+            <a class="navigation__link" href="JavaScript.html">JavaScript</a>
         </nav>
     </header>
 
@@ -31,7 +31,7 @@
             <section>
                 <article class="notes-section">
                     <p>
-                    <h2>Skróty klawiszowe</h2>
+                    <h2 class="notes-section__title">Skróty klawiszowe</h2>
                     Porządkowanie kodu HTML: Crtl+Shift+P ---> Format Document </br>
                     Tworzenie szkieletu HTML: ! ---> Tab </br>
                     </p>
@@ -41,7 +41,7 @@
 
         <div class="row">
             <section class="notes-section">
-                <h2>TAGI</h2>
+                <h2 class="notes-section__title">TAGI</h2>
                 <p>
                 <ul>
                     <li>"/br" - nowa linia</li></br>
@@ -77,7 +77,7 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Przykład listy z użyciem dt i dd</h2>
+                <h2 class="notes-section__title">Przykład listy z użyciem dt i dd</h2>
                 <h3>Potwory w Wiedźminie</h3>
                 <dl>
                     <dt>Arachnomorf</dt>
@@ -99,7 +99,7 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Przykład tabeli</h2>
+                <h2 class="notes-section__title">Przykład tabeli</h2>
                 <table>
                     <caption>Rozpiska WTF</caption>
                     <thead>
@@ -129,7 +129,7 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Formularze</h2>
+                <h2 class="notes-section__title">Formularze</h2>
                 Znacznik <strong>form</strong> jest swego rodzaju opakowaniem dla naszego formularza. Podstawowym
                 elementem, który
                 buduje nasz formularz jest <strong>input</strong>. Każdy input powinien mieć swoją nazwę (name). Należy
@@ -145,6 +145,7 @@
                 Istnieje również atrybut o nazwie placeholder, która służy do wyświetlenia podpowiedzi w okienku inputa
                 np. "Please
                 enter your name".
+                </p>
                 <p>
                     Kolejnym znacznikiem jest <strong>fieldset</strong>, który grupuje pola inputu. Innym typem naszego
                     inputa
@@ -202,22 +203,21 @@
                     Istnieje też atrybut jak<strong> enctype</strong>, które wartością domyślną jest "application/x-www-form-urlencoded". Jednak 
                     jeśli chcemy wysyłać pliki powinniśmy zmienić tę wartość na "multipart/form-data".
                 </p>
-                </p>
             </section>
         </div>
         
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Walidacja formularzy</h2>
+                <h2 class="notes-section__title">Walidacja formularzy</h2>
                 Walidacja to sprawdzanie poprawności danych wprowadzanych do formularzy.</br>
                 Zacznijmy od atrybutu zwanego <strong>required</strong>. Atrybut sprawia,że formularz nie zostanie 
                 wysłany dopóki użytkownik nie uzupełn wymaganego pola/pól. Dopisujemy required do pól formularza, które
                 mają być konieczne do wysłania formularza.
+                </p>
                 <p>
                     Inną formą walidacji są tzw. patterny z wykorzystaniem wyrażeń regularnych. Wyrażenia regularne
                     jest to pewien rodzaj zapisy pozwalający na wykrywanie pewnych ciągów znaków.
-                </p>
                 </p>
             </section>
         </div>
@@ -225,20 +225,20 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Tworzenie przycisków</h2>
+                <h2 class="notes-section__title">Tworzenie przycisków</h2>
+                </p>
                 <p>
                     W języku HTML przycisk zapisujemy przy pomocy atrybutu <strong>button</strong>. Róznica
                     między <strong>button</strong> a <strong>a</strong> jest taka,że button odpowiada za interakcje na stronie, 
                     natomiast "a" odpowiada za nawigację (skakanie po sekcjach, stronach, wchodzenie na strony zewnętrzne)
                 </p>
-                </p>
             </section>
         </div>
 
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Warto zapamiętać</h2>
+                <h2 class="notes-section__title">Warto zapamiętać</h2>
                 <ul>
                     <li>Jeśli coś jest powtarzalne na podstronach wstawiamy to przed "main"</li></br>
                     <li>Nie używamy tabel do budowania layoutów!</li></br>
@@ -251,8 +251,7 @@
 
     </main>
     <footer>
-        <h3 class="footer">Strona do <a class="footer-link" href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.
-        </h3>
+        <h3 class="footer">Strona do notatek z kursu WTF:Co ten Frontend.</h3>
     </footer>
     <script src="./JavaScript/main.js"></script>
 </body>

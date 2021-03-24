@@ -13,10 +13,10 @@
 <body>
     <header class="header-navigation">
         <nav class="navigation">
-            <a class="navigation-link" href="index.html">Strona główna</a>
-            <a class="navigation-link" href="nauka_html.html">HTML</a>
-            <a class="navigation-link" href="nauka_css.html">CSS</a>
-            <a class="navigation-link" href="JavaScript.html">JavaScript</a>
+            <a class="navigation__link" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka_html.html">HTML</a>
+            <a class="navigation__link" href="nauka_css.html">CSS</a>
+            <a class="navigation__link" href="JavaScript.html">JavaScript</a>
         </nav>
     </header>
 
@@ -27,8 +27,8 @@
 
         <div class="row">
             <section class="notes-section">
-                <h2 class="notes-JavaScript--js">Tu jest przykładowy element</h2>
                 <p>
+                <h2 class="notes-section__title">Tu jest przykładowy element</h2>
                 <ul>
                     <li>alert('tekst'); - na stronie (przed jej załadowaniem) wyświetli się alert</li></br>
                     <li>console.log('tekst'); - pojawia się napis w konsoli</li></br>
@@ -47,7 +47,7 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Zmienne</h2>
+                <h2 class="notes-section__title">Zmienne</h2>
                 Istnieją trzy sposoby zapisywania zmiennych w JavaScript. Są to słowa kluczowe LET, CONST i VAR.
                 Powoli odchodzi się od używania VAR.
                 </p>
@@ -57,14 +57,16 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Funkcje</h2>
-                function calculate(myNumber) { return myNumber*7; }</br>
-                <p></p>
-                function - deklaracja </br>
-                (myNumber) - parametr </br>
-                return - słowo kluczowe </br>
-                myNumber - wynik </br>
+                <h2 class="notes-section__title">Funkcje</h2>
+                function calculate(myNumber) { return myNumber*7; }
                 </p>
+                <p>
+                    function - deklaracja </br>
+                    (myNumber) - parametr </br>
+                    return - słowo kluczowe </br>
+                    myNumber - wynik </br>
+                </p>
+
                 <p>
                     Aby wpisać parametry w funckję:</br>
                     calculate();</br>
@@ -82,40 +84,46 @@
                     W funckjack JS możemy wpisywać nie tylko liczny ale też tekst. Funkcja może również pryzjmować
                     więcej nić jeden parametr.</br>
                     Przykładowa funkcja:</br>
-                <p></p>
-                function greet (age,firstName) {</br>
-                console.log(</br>
-                `Witaj Drogi Odwiedzający, nazywam się %{firstName} i mam ${age} lat.`</br>
-                );</br>
-                };</br>
                 </p>
-                Podstawiamy paramatery:</br>
-                greet(18,'Maciek')</br>
-                Funkcja wywoła zdanie w konsoli nawet bez returna:</br>
-                "Witaj Drogi Odwiedzający, nazywam się <strong>Maciek</strong> i mam <strong>18</strong> lat."</br>
-                W przypadku nie podania, któregoś z elementów pojawi się na jego miejscu "undefined".</br>
-                Możemy wywołać jedną funkcję wiele razy.</br>
+                <p>
+                    function greet (age,firstName) {</br>
+                    console.log(</br>
+                    `Witaj Drogi Odwiedzający, nazywam się %{firstName} i mam ${age} lat.`</br>
+                    );</br>
+                    };</br>
+                </p>
+                <p>
+                    Podstawiamy paramatery:</br>
+                    greet(18,'Maciek')</br>
+                    Funkcja wywoła zdanie w konsoli nawet bez returna:</br>
+                    "Witaj Drogi Odwiedzający, nazywam się <strong>Maciek</strong> i mam <strong>18</strong> lat."</br>
+                    W przypadku nie podania, któregoś z elementów pojawi się na jego miejscu "undefined".</br>
+                    Możemy wywołać jedną funkcję wiele razy.</br>
+                </p>
                 <p>
                     Poniżej przykład funkcji za pomocą której, możemy uzupełnić wybrany element HTML o określony
                     content.
-                <p></p>
-                function createContent(querySelectorContent,content) {</br>
-                const element = document.querySelector(querySelectorContent);</br>
-                element.innerHTML = content;</br>
-                }</br>
-                Wywołujemy funkcję:</br>
-                createContent('.week-summary__description--js', 'Witaj świecie!')</br>
-                <p></p>
-                Rezultat:</br>
-                W miejscu wskazany przez querySelectorContent pojawia się wpisany przez nas content.</br>
+                </p>
+                <p>
+                    function createContent(querySelectorContent,content) {</br>
+                    const element = document.querySelector(querySelectorContent);</br>
+                    element.innerHTML = content;</br>
+                    }</br>
+                    Wywołujemy funkcję:</br>
+                    createContent('.week-summary__description--js', 'Witaj świecie!')</br>
+                </p>
+                <p>
+                    Rezultat:</br>
+                    W miejscu wskazany przez querySelectorContent pojawia się wpisany przez nas content.</br>
                 </p>
                 <p>
                     Podsumowanie:</br>
-                <p></p>
-                Deklarujemy nazwę funkcji (nie zawsze).</br>
-                W środku dokonujemy obliczeń/wykonujemy zadania.</br>
-                Funkcja przyjmuje argumenty (ale nie musi).</br>
-                Funkacja zwraca zawsze coś (nawet jeśli nie mamy return - wtedy funkcja zwraca undefined)
+                </p>
+                <p>
+                    Deklarujemy nazwę funkcji (nie zawsze).</br>
+                    W środku dokonujemy obliczeń/wykonujemy zadania.</br>
+                    Funkcja przyjmuje argumenty (ale nie musi).</br>
+                    Funkacja zwraca zawsze coś (nawet jeśli nie mamy return - wtedy funkcja zwraca undefined)
                 </p>
             </section>
         </div>
@@ -123,29 +131,32 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>(Fat) arrow function</h2>
+                <h2 class="notes-section__title">(Fat) arrow function</h2>
                 Przykład arrow function:</br>
-                <p></p>
+                </p>
+                <p>
                 cont calculate = (myNumber) => {</br>
                 myNumber = myNumber + 3;</br>
                 console.log(myNumber);</br>
                 return myNumber*7;</br>
                 }</br>
-                <p></p>
+                </p>
                 calculate(2); //35</br>
-                <p></p>
+                <p>
                 Funkcja greet w wersji fat arrow:</br>
                 const greet = (age,firstName) => {
                 console.log(</br>
                 `Witaj Drogi Odwiedzający, nazywam się %{firstName} i mam ${age} lat.`</br>
                 );</br>
                 }</br>
-                <p></p>
+                </p>
+                <p>
                 Można skrócić jeszcze bardziej:</br>
                 const calculate = myNumber => (myNumber+3)*7;</br>
                 const myResult = calculate(7)</br>
                 console.log(myResult)</br>
-                <p></p>
+                </p>
+                <p>
                 Podsumowanie:</br>
                 Skraca zapis deklaracji funkcji.</br>
                 Zawiększa czytelność (dyskusyjne).</br>
@@ -159,10 +170,11 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Obiekty</h2>
+                <h2 class="notes-section__title">Obiekty</h2>
                 Obiekt jest strukturą danych.</br>
                 Przykład obiektu:</br>
-                <p></p>
+                </p>
+                <p>
                 const deathStar = {</br>
                 diameter: 120000,</br>
                 fire: (target) => {</br>
@@ -176,39 +188,45 @@
                 Funkcje określają jakąś czynność a obiekt zawiera infomracje o jego cechach.</br>
                 Obiekt może zawierać w sobie funkcje.</br>
                 W konsoli własności obiektu wypisywane są alfabetycznie.</br>
-                <p></p>
+                </p>
+                <p>
                 klucz: wartość;</br>
                 klucz - unikalny w ramach obiektu</br>
                 wartość - prymitywy / funkcje / zagnieżdżenia</br>
-                <p></p>
+                </p>
                 Możliwe jest stworzenie obiektu w obiekcie.</br>
-                <p></p>
+                <p>
                 Aby wypisać jedną własność z obiektu:</br>
                 console.log(deathStar.name)</br>
                 Konsola wypisze nam tylko własność name.</br>
                 Jeśli chcemy przejśc do własności obiektu w obiekcie doapisujemy kolejną kropkę a po niej nazwę
                 własności:</br>
                 console.log(deathStar.commander.name)</br>
-                <p></p>
+                </p>
+                <p>
                 Metodą w obiektach nazywamy funkcję w tym obiekcie.</br>
                 Metodę wywołujemy w nasyępujący sposób:</br>
                 deathStar.fire('Rebel ship')</br>
                 fire - nazwa metody</br>
                 () - w nawiasie wpisujemy target zapisany w metodzie fire</br>
-                <p></p>
+                </p>
                 Oprócz metody dot notation (zaprezentowanej powyżej) istnieje również bracket notation.</br>
                 Wygląda ona natępująco:</br>
-                <p></p>
+                <p>
                 console.log(deathStar['name'])</br>
-                <p></p>
+                </p>
+                <p>
                 W metodzie bracket podając własność konieczne jest użycie kwadratowych nawiasów.</br>
-                <p></p>
+                </p>
+                <p>
                 Funkcja,która pozwala na szybkie wywoływanie własności z obiektu:</br>
-                <p></p>
+                </p>
+                <p>
                 const showMeProperty = (myProperty) => {</br>
                 console.log(`Twoje własność ${myProperty} to: ${deathStar[myProperty]}`);</br>
                 }</br>
-                <p></p>
+                </p>
+                <p>
                 showMeProperty('levels')</br>
                 Funkcja wypisze własność levels obiektu deathStar.</br>
                 </p>
@@ -218,7 +236,7 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Immutability w obiektach</h2>
+                <h2 class="notes-section__title">Immutability w obiektach</h2>
                 Nie da się usunąć wartości ze zmiennych. My jest tylko przekierowujemy.</br>
                 Jeśli mamy dwa consty albo lety o tej samej wartości,to są one czymś oddzielnym. Oba są podłaczone
                 do tej samej wartości. Np.:</br>
@@ -232,23 +250,23 @@
                 name = 'Wojtek',</br>
                 age = 25</br>
                 }</br>
-                <p></p>
+                </p>
+                <p>
                 const humanTwo = {</br>
                 name = 'Anna',</br>
                 age = 26</br>
                 }</br>
-                <p></p>
+                </p>
+                <p>
                 Możemy zmienić włsności obiektu. Nie są one stałe. Czyli np. możemy przypisać Annie wiek 25. Wtedy
-                podepnie się
-                on w naszym świecie wartości do 25-tki. Tej samej, do której jest podłączony Wojtek.</br>
+                podepnie się on w naszym świecie wartości do 25-tki. Tej samej, do której jest podłączony Wojtek.</br>
                 Możemy też zrobić to w drugą stronę. Jeśli obie własności age wynosiłyby 25 możemy ustawić jedną z nich
-                na inną
-                liczbę,ponieważ te połączenia są elastyczne.</br>
-                <p></p>
+                na inną liczbę,ponieważ te połączenia są elastyczne.</br>
+                </p>
+                <p>
                 Możemy również przypisać obiektowi humanTwo własności obiektu humanOne. Wtedy własności humanOne stają
-                się wartościami
-                humanTwo. Jednak jeśli zmienimyy wartości własności w humanTwo zostaną one również zmienione dla
-                humanOne.
+                się wartościami humanTwo. Jednak jeśli zmienimyy wartości własności w humanTwo zostaną one 
+                również zmienione dla humanOne.
                 Jeśli zmienimy age w humanTwo, age w humanOne również ulegnie zmianie.</br>
                 </p>
             </section>
@@ -257,14 +275,14 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Logika</h2>
+                <h2 class="notes-section__title">Logika</h2>
                 Każdy język programowania opera się silnie na logice. Logika opera się na dwóch wartościach:
                 prawda i fałsz.</br>
                 W JavaScriptcie istnieje takie słowo kluczowe jak <strong>if</strong>. Po tym słowie, kiedy wprowadzimy
-                jakieś
-                wyrażenie logiczne to dostaniemy true lub false. Wyrażenie będzie wykonywac się jeśli to co jest przed
+                jakieś wyrażenie logiczne to dostaniemy true lub false. Wyrażenie będzie wykonywac się jeśli to co jest przed
                 if jest prawdą.</br>
-                <p></p>
+                </p>
+                <p>
                 Warto zapoznać się z operatorami:</br>
                 <ul>
                     <li>> - lewa strona większa od prawej</li>
@@ -278,7 +296,8 @@
                     <li>!= - obie strony różne</li>
                     <li>!== - obie strony różne (sprawdza typeof)</li>
                 </ul>
-                <p></p>
+                </p>
+                <p>
                 Wartości w JS, które zawsze zwracają nam false:</br>
                 <ul>
                     <li>false</li>
@@ -288,7 +307,8 @@
                     <li>undefined</li>
                     <li>NaN - Not a number</li>
                 </ul>
-                <p></p>
+                </p>
+                <p>
                 Wartościami, które są true będą:</br>
                 <ul>
                     <li>'Tekst'</li>
@@ -300,37 +320,45 @@
                     <li>1</li>
                 </ul>
                 itd.
-                <p></p>
+                </p>
+                <p>
                 Aby połączyć ze sobą warunki używamy wyrażenia <strong>&&</strong>(AND). Warunek wykona się jeśli oba
                 (lub więcej) warunki są prawdziwe.</br>
                 Innym operatorem jest<strong> || </strong>(OR), gdzie przynajmniej jeden warunek ma być true.</br>
                 Operator <strong>!</strong> (NOT) odwraca wartość wyrażenia logicznego. Przykład:</br>
-                <p></p>
+                </p>
+                <p>
                 if (!('JavaScript' == 'Java')) {</br>
                 // ten kod się wykona</br>
                 }</br>
-                <p></p>
+                </p>
+                <p>
                 W skrócie, zaprzeczenie fałszu to prawda (!false => true), a zaprzeczenie prawdy to fałsz (!true =>
                 false).</br>
-                <p></p>
+                </p>
+                <p>
                 Oprócz if mamy również <strong>else</strong>. Else jest to treść kody,która wykona się jeśli
                 stwierdzenie z if okaże się
                 nieprawdziwe.</br>
-                <p></p>
+                </p>
+                <p>
                 if (myVariable == 4) {</br>
                 // wykonaj kod jeśli true</br>
                 } else {</br>
                 // wykonaj kod jeśli false</br>
                 }</br>
-                <p></p>
+                </p>
+                <p>
                 Aby dodać jeszcze jedną gałąź pod else użyjemy <strong>else if</strong>. Przykład:</br>
-                <p></p>
+                </p>
+                <p>
                 if (myVariable == 4) {</br>
                 // wykonaj kod jeśli true</br>
                 } else if (myVariable == 8) {</br>
                 // wykonaj kod jeśli myVariable == 8</br>
                 }</br>
-                <p></p>
+                </p>
+                <p>
                 Istnieje również konstrukcja, która nazywa się <strong>switch</strong>, która pozwala w wygodny
                 sposób sprawdzić ciąg warunków i wykonać różne instrukcje w zależności od wyników porównywania.
                 Ma ona ogólną postać:</br>
@@ -358,7 +386,7 @@
                 wymienionych
                 przypadków, wykonaj instrukcje4 i zakończ blok switch. Blok default jest jednak opcjonalny i może zostać
                 pominięty.
-                <p></p>
+                </p>
                 Istnieje zapis skrócony konstukcji warunkowej. Wygląda on tak:</br>
                 <p>
                     (zmienna1 > zmienna2) ? console.log('true') : console.log('false')
@@ -375,14 +403,13 @@
                     console.log('to nieprawda')</br>
                     }</br>
                 </p>
-                </p>
             </section>
         </div>
 
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Eventy</h2>
+                <h2 class="notes-section__title">Eventy</h2>
                 Atrybut <strong>element.addEventListener(type, listener [, options])</strong> służy do dodawania obsługi
                 zdarzeń do dokumentu. Typ (type) w kodzie może być np. wydarzeniem związanym z myszką. W drugim
                 parametrze (listner)
@@ -400,6 +427,7 @@
                     const heading = document.querySelector(".main__heading--js");</br>
                     heading.innerHTML = `Witaj Drogi Odwiedzający, nazywam się Maciek`;</br>
                     }</br>
+                </p>
                 <p>
                     Inną metodą na stworzenie guzika jest stworzenie funkcji strzałkowej .addEventListenerze z (e).</br>
                     Przykład:</br>
@@ -411,15 +439,13 @@
                     (e) - Event</br>
                     target - jeśli chcemy zrobić coś z danym elementem po kliknięciu</br>
                 </p>
-
-                </p>
             </section>
         </div>
 
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Node.js</h2>
+                <h2 class="notes-section__title">Node.js</h2>
                 Node to taki JavaScript uruchamiany poza przeglądarką. Jest to taki "konsolowy JavaScript".
                 Co ważne, Node nie ma dostępu do DOM-u.
                 </p>
@@ -429,7 +455,7 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>NPM & NPX</h2>
+                <h2 class="notes-section__title">NPM & NPX</h2>
                 Dlaczego jest nam potrzebny NPM? Ponieważ:</br>
                 <ul>
                     <li>dodajemy do projektów sporo gotowych bibliotek / narzędzi</li>
@@ -456,7 +482,7 @@
                     Nie edytujemy niczego w katalogach.
                 </p>
                 <p>
-                    Alternatywą dla NPM'a jest np. <b><a class="links-link" href="https://yarnpkg.com/">Yarn</a></b>.
+                    Alternatywą dla NPM'a jest np. <b><a class="links__link" href="https://yarnpkg.com/">Yarn</a></b>.
                 </p>
 
             </section>
@@ -465,7 +491,7 @@
         <div class="row">
             <section class="notes-section">
                 <p>
-                <h2>Warto zapamiętać</h2>
+                <h2 class="notes-section__title">Warto zapamiętać</h2>
                 <ul>
                     <li>Zmianna to nie wartość!</li></br>
                     <li>Kod script dodajemy na samym końcu HTML-a (za footerem a przed body)</li></br>
@@ -482,9 +508,7 @@
 
     </main>
     <footer>
-        <h3 class="footer">Strona do <a class="footer-link" href="#notatki">notatek</a> z kursu WTF:Co ten Frontend.
-        </h3>
-    </footer>
+        <h3 class="footer">Strona do notatek z kursu WTF:Co ten Frontend.</h3>
     <script src="./JavaScript/main.js"></script>
 </body>
 
