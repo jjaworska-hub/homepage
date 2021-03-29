@@ -104,12 +104,6 @@ h1{
   }
 }
 
-.links__link{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  text-decoration: none;
-  color: #2B2D42;
-}
-
 aside:nth-of-type(2) {
   order: 3;
 }
@@ -127,6 +121,11 @@ aside:nth-of-type(2) {
   &__title{
     color: #753e70;
     font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  &__link{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #965090;
   }
 }
 
@@ -184,7 +183,6 @@ aside:nth-of-type(2) {
   border-radius: 50%;
 }
 
-
 .footer{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: small;
@@ -209,11 +207,7 @@ aside:nth-of-type(2) {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.switch{
-  list-style: none;
-}
-
-.media-queries{
+.list-style-none{
   list-style: none;
 }
 

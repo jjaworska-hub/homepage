@@ -231,7 +231,7 @@
                         flex-basis</strong>.</br>
                 </p>
                 <p>
-                    Strona ściągawka: <b><a class="links-link"
+                    Strona ściągawka: <b><a class="links__link"
                             href="http://drakonica.pl/dokumenty/flexbox_zestawienie.htm">Flexbox -
                             ściągawka</a></b></br>
                 </p>
@@ -407,7 +407,7 @@
                         <li>row-gap: rozmiar odstępu - odstęp między wierszami</li>
                         <li>minmax(minWartość, maxWartość) - minimalna i maksymalna wartość jaką ma przyjmować element;
                         </li>
-                        <li>grid-template-areas: - <b><a class="links-link"
+                        <li>grid-template-areas: - <b><a class="links__link"
                                     href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas">Wytłumaczenie</a></b></br>
                         </li>
                         <ul>
@@ -465,7 +465,7 @@
                 </ul>
                 <p>
                     Przykład media queries:</br>
-                <ul class="media-queries">
+                <ul class="list-style-none">
                     <li> @media screen and (max-width: 600px){</li>
                     <ul class="media-queries">
                         <li>body {</li>
@@ -573,6 +573,33 @@
                 <p>
                 Kolejną funkcją Scss jest parent selector. (odsyłam do filmiku <b><a class="links-link"
                         href="https://edu.devstyle.pl/products/wtf-2/categories/3127101/posts/10427013">SASS/SCSS</a></b>).
+                </p>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
+                <h2 class="notes-section__title">Po co nam moduły?</h2>
+                <ul>
+                    <li>aplikacje szybko rosną i trudno trzymać wszystko w jednym pliku</li>
+                    <li>chcemy korzystać z wybranych funkcji w różnych plikach</li>
+                    <li>chcemy mieć porządek w projekcie</li>
+                    <li>chcemy korzystać z kodu udostępnianego przez innych developerów (albo udostępniać swój!)</li>
+                </ul>
+                </p>
+                <p>
+                <h2 class="notes-section__title">Import w (S)CSS</h2>
+                    Zarówno w CSS jak i w SCSS słowem kluczowym,które powoduje to,że możemy na przykład
+                    coś zaimportować/dołączyć do naszego pliku jest słowo kluczowe <strong>@import "źródło"</strong>.
+                    W VSCode w katalogu (S)CSS tworzymy odzielny katalog "modules" i wkładamy do niego część kodu z naszych styli.
+                    Następnie aby wyciągnięte style nie zniknęły z naszej stronymusimy w pliku style.(s)css dodać taką (przykładową) linijkę kodu:</br>
+                    <p>@import "modules/week-summary.scss"</p>
+                    Możemy również importować źródła spoza naszego serwera. Możemy dzięki temu na przykład zaimportować fonty z GoogleFonts albo
+                    normalize'a.
+                </p>
+                <p>
+                    W (S)CSS nie ma eksportów.
                 </p>
             </section>
         </div>
