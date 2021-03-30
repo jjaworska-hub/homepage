@@ -607,6 +607,42 @@
         <div class="row">
             <section class="notes-section">
                 <p>
+                <h2 class="notes-section__title">Zmienne</h2>
+                Faktyczna nazwa - CSS Custom Properties. Do wykorzystania Custom Properties użyjemy pseudoselektora o 
+                nazwie <strong>:root</strong>.
+                </p>
+                <p>
+                Przykład użycia zmiennych:
+                <ul class="list-style-none">
+                    <li>:root {</li>
+                    <ul class="list-style-none">
+                        <li>--small-padding: 8px;</li>
+                        <li>--text-color: yellow;</li>
+                    </ul>
+                    <li>}</li>
+                </ul>
+            </p>
+            <p>
+                <ul class="list-style-none">
+                    <li>h1 {</li>
+                    <ul class="list-style-none">
+                        <li>padding: var(--small-padding);</li>
+                        <li>color: var(--text-color);</li>
+                    </ul>
+                    <li>}</li>
+                </ul>
+            </p>
+            <p>
+                Za pomocą JS możemy zmieniać wartość elementu za pomocą takiej linijki kodu:</br>
+                document.documentElement.style.setProperty('--zmienna', 'wartość')
+            </p>
+
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="notes-section">
+                <p>
                 <h2 class="notes-section__title">Warto zapamiętać</h2>
                 <ul>
                     <li>Nie ma potrzeby dopisywania jednostki do 0.</li></br>
